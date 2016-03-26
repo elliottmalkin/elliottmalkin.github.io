@@ -78,15 +78,15 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    left: 56px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent rgba(256,256,256,.3)  transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
+    right: 56px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    border-color: transparent transparent transparent rgba(256,256,256,.3) ;
 }
 .fp-scrollable {
     overflow: scroll;
@@ -151,23 +151,24 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
-    margin: -6px 0 0 -6px;
+    height: 10px;
+    width: 10px;
+    margin: -3px 0 0 -5px;
     border-radius: 100%;
+    background: white;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 8px;
+    width: 8px;
     border: 0;
-    background: #333;
+    background: rgba(256,256,256,.3) ;
     left: 50%;
     top: 50%;
-    margin: -2px 0 0 -2px;
+    margin: -2px 0 0 -4px;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
