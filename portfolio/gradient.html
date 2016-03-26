@@ -17,14 +17,22 @@
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
-		font-size: 5em;
+		font-size: 3em;
 		font-family: arial,helvetica;
 		color: #fff;
-		margin:0;
+		margin:0 auto;
 		padding:0;
+		width:40%;
+		text-align:left;
 	}
 	.intro p{
 		color: #fff;
+		font-size: 2em;
+		margin:0 auto;
+		width:40%;
+		text-align:left;
+		padding-top:.2em;
+		padding-bottom:2em;
 	}
 
 	/* Centered texts in each section
@@ -32,8 +40,6 @@
 	.section{
 		text-align:center;
 	}
-
-
 
 	/* Defining each section background and styles
 	* --------------------------------------- */
@@ -72,12 +78,6 @@
 	}
 	</style>
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
@@ -86,52 +86,73 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$('#fullpage').fullpage();
+			$('#fullpage').fullpage({
+				// sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				// navigation: true,
+				// navigationPosition: 'right',
+				// slidesNavigation: true,
+			});
 		});
 	</script>
+
 
 </head>
 <body>
 
-<!-- <select id="demosMenu">
-  <option selected>Choose Demo</option>
-  <option id="backgrounds">Background images</option>
-  <option id="backgroundVideo">Background video</option>
-  <option id="gradientBackgrounds">Gradient backgrounds</option>
-  <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
-  <option id="looping">Looping</option>
-  <option id="noAnchor">No anchor links</option>
-  <option id="scrollingSpeed">Scrolling speed</option>
-  <option id="easing">Easing</option>
-  <option id="callbacks">Callbacks</option>
-  <option id="css3">CSS3</option>
-  <option id="continuous">Continuous scrolling</option>
-  <option id="normalScroll">Normal scrolling</option>
-  <option id="scrollBar">Scroll bar enabled</option>
-  <option id="scrolling">Scroll inside sections and slides</option>
-  <option id="navigationV">Vertical navigation dots</option>
-  <option id="navigationH">Horizontal navigation dots</option>
-  <option id="fixedHeaders">Fixed headers</option>
-  <option id="apple">Apple iPhone demo (animations)</option>
-  <option id="oneSection">One single section</option>
-  <option id="responsiveHeight">Responsive Height</option>
-  <option id="responsiveWidth">Responsive Width</option>
-  <option id="methods">Methods</option>
-</select> -->
-
 <div id="fullpage">
-	<div class="section " id="section0"><h1>Elliott Malkin</h1></div>
+
+	<div class="section" id="section0">
+		<div class="intro"><h1>Elliott Malkin</h1>
+	<p>I'm a seasoned UX designer and manager of design teams. Here's an overview of my work.</p></div></div>
+
 	<div class="section" id="section1">
-	    <div class="slide" id="slide1"><h1>Soft graduated colors</h1>
-			<p>secondary text</p></div>
+	    <div class="slide" id="slide1">
+				<div class="intro"><h1>The New York Times</h1>
+			<p>As Product Design Director for Mobile at The New York Times, I inherited a set of mobile products that were downstream readers of the desktop website. Aside from needing a visual overhaul, I was instrumental to cutting that dependency.</p>
+			<div class="imgsContainer">
+						<!-- <img src="imgs/devices.png" alt="iphone" id="iphone-two" -->
+					</div>
+				</div>
+		</div>
+
 	    <div class="slide" id="slide2"><h1>Even for each slide if you want</h1></div>
 	</div>
+
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1>Feel free!</h1>
+			<h1>WNYC</h1>
 			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
 		</div>
 	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Anchor</h1>
+			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Treelines</h1>
+			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Citymaps</h1>
+			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Art and Education</h1>
+			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+		</div>
+	</div>
+
 </div>
 
 

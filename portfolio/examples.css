@@ -59,10 +59,10 @@ body{
 	position: relative;
 }
 h1{
-	font-size: 6em;
+	font-size: 4em;
 }
 p{
-	font-size: 2em;
+	font-size: 3em;
 }
 .intro p{
 	width: 50%;
@@ -72,7 +72,8 @@ p{
 .section{
 	text-align:center;
 }
-#menu li {
+
+/*#menu li {
 	display:inline-block;
 	margin: 10px;
 	color: #000;
@@ -229,16 +230,15 @@ p{
 	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 	padding: 0 0 5px 0;
-}
+}*/
 
 
 
 /* Demos Menu
  * --------------------------------------- */
- #demosMenu{
+ /*#demosMenu{
 	position:fixed;
 	bottom: 10px;
 	right:10px;
 	z-index: 999;
- }
-
+ }*/
