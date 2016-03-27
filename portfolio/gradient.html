@@ -22,14 +22,26 @@
 		color: #fff;
 		margin:0 auto;
 		padding:0;
-		width:40%;
+		width:50%;
 		text-align:left;
 	}
+
+	a {font-size: 1em;
+			font-family: arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+			text-decoration: underline;
+			color: #fff
+		}
+
 	.intro p{
 		color: #fff;
-		font-size: 2em;
+		font-size: 1.8em;
 		margin:0 auto;
-		width:40%;
+		width:50%;
 		text-align:left;
 		padding-top:.2em;
 		padding-bottom:3em;
@@ -37,7 +49,7 @@
 	}
 	.image p{
 		color: #fff;
-		font-size: 2em;
+		font-size: 1.8em;
 		/*margin:0 auto;*/
 		text-align:left;
 		/*padding-top:.2em;*/
@@ -50,7 +62,14 @@
 img {float:left;
 	padding-top:.5em;
 		margin-left:15%;
-		margin-right:4%}
+		margin-right:4%;
+		max-width:25%}
+
+.landscape {float:left;
+			padding-top:.5em;
+				margin-left:15%;
+				margin-right:4%;
+				max-width:40%}
 
 	/* Centered texts in each section
 	* --------------------------------------- */
@@ -72,8 +91,6 @@ img {float:left;
 		background: linear-gradient(#969AC6,#636F8F);
 	}
 
-
-
  	/*Adding background for the slides
 	* --------------------------------------- */
 	#slide1{
@@ -87,12 +104,23 @@ img {float:left;
 		background: linear-gradient(#92a1ca,#76c2bd);
 	}
 
-
 	/* Bottom menu
 	* --------------------------------------- */
 	#infoMenu li a {
 		color: #fff;
 	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	/*.slide{
+		background-size: cover;
+	}*/
+
+	/*#slide6{
+		background-image: url(imgs/iphone-recs.png);
+		padding: 0 0 0 0;
+	}*/
+
 	</style>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -112,7 +140,6 @@ img {float:left;
 		});
 	</script>
 
-
 </head>
 <body>
 
@@ -120,20 +147,102 @@ img {float:left;
 
 	<div class="section" id="section0">
 		<div class="intro"><h1>Elliott Malkin</h1>
-	<p>I'm a seasoned UX designer<br>and manager of design teams.</p></div></div>
+	<p>I'm a seasoned UX designer, product strategist, and manager of design teams.
+  <br><br>Here's a selection of my work.</p></div></div>
 
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1">
-				<div class="imgsContainer">
-							<img src="imgs/old-android.png">
-			</div>
-			<div class="image">
-			<p>As Product Design Director for The New York Times, I inherited a set of mobile products that were downstream readers of the desktop website. Aside from needing a visual overhaul, I was instrumental to cutting that dependency.</p>
+						<div class="imgsContainer">
+							<img src="imgs/iphone-2015.png">
+						</div>
+				<div class="image">
+				<p>As Mobile Product Design Director at The New York Times, I led a team to transform our offerings from static feed readers, into experiences purpose-built for mobile.</p>
 				</div>
 		</div>
 
-	    <div class="slide" id="slide2"><h1>Even for each slide if you want</h1></div>
+		<div class="slide" id="slide2">
+					<div class="imgsContainer">
+						<img src="imgs/android-2011.png">
+					</div>
+			<div class="image">
+				<p>As late as 2013, our apps were essentially downstream readers of the desktop news site.<br><br>Crafting a UX around a reversal of this structure was the central narrative of my role at The Times. And we did so in a way that significantly drove digital revenue.</p>
+			</div>
+		</div>
+
+	<div class="slide" id="slide2">
+		<div class="imgsContainer">
+					<img src="imgs/android-2015.png">
 	</div>
+	<div class="image">
+	<p>By 2015 we had a suite of award-winning news apps that scaled beautifully across phones and tablets. And more importantly, they were no longer dependent on desktop news feeds. Reporters and editors could now publish directly into mobile-specific CMS.</p>
+		</div>
+</div>
+
+<div class="slide" id="slide2">
+			<div class="imgsContainer">
+				<img class="landscape" src="imgs/ipad-2015.png">
+			</div>
+			<div class="image">
+				<p>When we embarked on an iPad app redesign, we turned another feed reader with few visual templates into a textured, stylized experience that amplified the voice and art direction of every section.</p>
+			</div>
+</div>
+
+<div class="slide" id="slide2">
+			<div class="imgsContainer">
+				<img class="landscape" src="imgs/ipad-sideby.png">
+			</div>
+			<div class="image">
+				<p>When we embarked on an iPad app redesign, we turned another feed reader with few visual templates into a stylized experience that amplified the voice and art direction of every section.</p>
+			</div>
+</div>
+</div>
+
+	<div class="section" id="section2">
+
+<div class="slide" id="slide2">
+	<div class="intro"><h1>Problem: Content Discovery</h1>
+<p>Readers flock to The New York Times for its handcrafted selection of news, curated by editors, not algorithms. But that leaves the question of how to surface the rest of the iceberg. Every day, The Times produces a firehose of great content.</p>
+	</div>
+</div>
+
+<div class="slide" id="slide2">
+	<div class="imgsContainer">
+				<img src="imgs/tip.jpg">
+</div>
+<div class="image">
+<p>News apps typically surface a ranked listing of the latest hard news, weighted according to importance. Users rarely go beyond this surface. And why should they? The rest of the content is buried under sections.</p>
+	</div>
+	</div>
+
+	<div class="slide" id="slide2">
+		<div class="imgsContainer">
+					<img class="landscape" src="imgs/recs.png">
+	</div>
+	<div class="image">
+	<p>Assuming we could build an effective recommendation engine, I was tasked with the question of how we might surface it at the top of our apps.<br><a href="imgs/iphone-recs.png">Rec Engine Designs</a></p>
+		</div>
+		</div>
+
+
+	<div class="slide" id="slide2">
+		<div class="imgsContainer">
+					<img src="imgs/icymi.png">
+	</div>
+	<div class="image">
+	<p>Failing a quality recommendation engine,  we did have two critical pieces of information: 1. an aggregate notion of the most popular stories, 2. which of those stories a user has seen.</p>
+		</div>
+		</div>
+
+<div class="slide" id="slide2">
+			<div class="imgsContainer">
+						<img src="imgs/icymi.png">
+</div>
+		<div class="image">
+		<p>Hence, In Case You Missed It. A de-duped list of Trending stories.</p>
+</div>
+</div>
+
+</div>
 
 	<div class="section" id="section2">
 		<div class="intro">
@@ -142,30 +251,36 @@ img {float:left;
 	</div>
 
 	<div class="section" id="section2">
+		<div class="imgsContainer">
+					<img src="imgs/old-android.png">
+	</div>
 		<div class="intro">
 			<h1>Anchor</h1>
-			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+			<p>Anchor is an audio-sharing platform experiencing fast organic growth.<br><br>I'm helping them tackle the problem of converting new users to download the app from a social referral.</p>
 		</div>
 	</div>
 
 	<div class="section" id="section2">
+		<div class="imgsContainer">
+					<img src="imgs/old-android.png">
+		</div>
 		<div class="intro">
 			<h1>Treelines</h1>
-			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+			<p>Treelines was a product concept for the genealogy market.<br><br>I personally designed a visualization of family history that married family tree and timeline formats. Here's a wireframe. </p>
 		</div>
 	</div>
 
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>Citymaps</h1>
-			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+			<p>Citymaps needed to improve their </p>
 		</div>
 	</div>
 
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1>Art and Education</h1>
-			<p>Using CSS3 gradients you can play as much as you want with graduated colors</p>
+			<h1>Art, Education and Storytelling</h1>
+			<p>Along with UX design I am passionate about audio storytelling and teaching.</p>
 		</div>
 	</div>
 
