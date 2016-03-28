@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Elliott Malkin</title>
+	<meta name="Resource-type" content="Document" />
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fira+Sans:500,400,300">
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 4em;
+		font-family: 'Fira Sans',arial,helvetica;
+		color: #fff;
+		margin:0 auto;
+		padding:0;
+		width:50%;
+		text-align:left;
+		line-height:1.1em;
+	}
+	h2{
+		font-size: 3em;
+		font-family: 'Fira Sans',arial,helvetica;
+		color: #fff;
+		margin:0 auto;
+		padding:0;
+		width:50%;
+		text-align:left;
+		line-height:1.25em;
+	}
+	h3{
+		font-size: 2em;
+		line-height:1.25em;
+		font-family: 'Fira Sans',arial,helvetica;
+		font-weight: 200;
+		color: #fff;
+		margin:0 auto;
+		padding:0;
+		width:50%;
+		text-align:left;
+	}
+
+	a {font-size: .8em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+			text-decoration: none;
+			font-weight:500;
+			color: #fff
+		}
+
+	a.large {font-size: 1em;
+				font-family: 'Fira Sans',arial,helvetica;
+				color: #fff;
+				margin:0 auto;
+				padding:0;
+				width:50%;
+				text-align:left;
+				text-decoration: none;
+				font-weight:500;
+				color: #fff
+			}
+
+	p{
+				color: #fff;
+				font-size: 1.8em;
+				margin:0 auto;
+				width:70%;
+				text-align:left;
+				padding-top:.2em;
+				padding-bottom:3em;
+				line-height:1.25em;
+			}
+
+	.intro p{
+		color: #fff;
+		font-size: 1.8em;
+		margin:0 auto;
+		width:50%;
+		text-align:left;
+		padding-top:.2em;
+		padding-bottom:3em;
+		line-height:1.25em;
+	}
+
+	.image p{
+		color: #fff;
+		font-size: 1.8em;
+		/*margin:0 auto;*/
+		text-align:left;
+		/*padding-top:.2em;*/
+		padding-bottom:3em;
+		line-height:1.25em;
+		/*float: left;*/
+		margin-right:12%;
+	}
+
+img {float:left;
+		margin-left:15%;
+		margin-right:4%;
+		max-width:25%}
+
+.landscape {float:left;
+			/*padding-top:.5em;*/
+				margin-left:12%;
+				margin-right:4%;
+				max-width:40%}
+
+.full {float:left;
+			/*padding-top:.5em;*/
+				max-width:70%;
+			  text-align:center}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+@media only screen and (max-device-width : 720px) {
+
+	.landscape {float:center;
+					text-align:left;
+					margin-left:12%;
+					margin-right:4%;
+					max-width:70%;
+					margin-bottom:2em;}
+
+		h1{
+			font-size: 5em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+			line-height:1.1em;
+		}
+		h2{
+			font-size: 4em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+			line-height:1.15em;
+		}
+		h3{
+			font-size: 3em;
+			line-height:1.25em;
+			font-family: 'Fira Sans',arial,helvetica;
+			font-weight: 200;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+		}
+
+		a {font-size: 1em;
+				font-family: 'Fira Sans',arial,helvetica;
+				color: #fff;
+				margin:0 auto;
+				padding:0;
+				width:50%;
+				text-align:left;
+				text-decoration: none;
+				font-weight:500;
+				color: #fff
+			}
+
+		a.large {font-size: 1em;
+					font-family: 'Fira Sans',arial,helvetica;
+					color: #fff;
+					margin:0 auto;
+					padding:0;
+					width:50%;
+					text-align:left;
+					text-decoration: none;
+					font-weight:400;
+					color: #fff
+				}
+
+		p{
+					color: #fff;
+					font-size: 2.8em;
+					margin:0 auto;
+					width:70%;
+					text-align:left;
+					padding-top:.2em;
+					padding-bottom:3em;
+					line-height:1.25em;
+				}
+
+		.intro p{
+			color: #fff;
+			font-size: 2.8em;
+			margin:0 auto;
+			width:50%;
+			text-align:left;
+			padding-top:.2em;
+			padding-bottom:3em;
+			line-height:1.25em;
+		}
+
+		.image p{
+			color: #fff;
+			font-size: 2.8em;
+			/*margin:0 auto;*/
+			text-align:left;
+			/*padding-top:.2em;*/
+			padding-bottom:3em;
+			line-height:1.25em;
+			/*float: left;*/
+			margin-right:12%;
+			clear:both;
+		}
+
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+		background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+		background: linear-gradient(#4BBFC3,#7BAABE);
+	}
+
+	#section2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+		background: -webkit-linear-gradient(#969AC6, #636F8F);
+		background: linear-gradient(#969AC6,#636F8F);
+	}
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+		background: -webkit-linear-gradient(#7BAABE, #969AC6);
+		background: linear-gradient(#7BAABE,#969AC6);
+	}
+	#slide2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#92a1ca), to(#76c2bd));
+		background: -webkit-linear-gradient(#92a1ca, #76c2bd);
+		background: linear-gradient(#92a1ca,#76c2bd);
+	}
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	/*.slide{
+		background-size: cover;
+	}*/
+
+	/*#slide6{
+		background-image: url(imgs/iphone-recs.png);
+		padding: 0 0 0 0;
+	}*/
+
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage','fifthPage','sixthPage'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				navigation: true,
+				navigationPosition: 'right',
+				slidesNavigation: true,
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+
+	<div class="section" id="section0">
+		<div class="intro"><h1>Elliott Malkin</h1>
+	<h3>Seasoned UX designer, product strategist, and manager of design teams.<br><br><i>Best viewed on desktop (for now.)</i></h3></div></div>
+
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1">
+					<div class="intro"><h2>The New York&nbsp;Times</h2>
+				<p>As Mobile Product Design Director, I led a team to transform our apps from static feed readers into experiences purpose-built for mobile.</p>
+				</div>
+		</div>
+
+		<div class="slide" id="slide2">
+			<div class="imgsContainer">
+				<img class="landscape" src="imgs/android-sideby.png">
+			</div>
+			<div class="image">
+				<p><!--Crafting a UX around the reversal of this structure was the central narrative of my role at The Times. And doing so in a way that significantly drove digital revenue.-->I set the focus on simplicity, usability and visual elegance as we matured the products in tandem with improvements to mobile operating systems.</p>
+			</div>
+		</div>
+
+<div class="slide" id="slide2">
+<div class="imgsContainer">
+  <video class="landscape" height="680" controls autoplay id="myVideo">
+  <source src="imgs/nyt-vid.mp4" type="video/mp4"></video>
+</div>
+<div class="image">
+<p>In 2014, I advocated for a major investment to break the downstream dependence from our desktop website.<br><br>I used this design to show how it would open up a new generation of editorial styles.</p>
+</div>
+</div>
+
+<div class="slide" id="slide2">
+			<div class="imgsContainer">
+				<img class="landscape" src="imgs/ipad-2015.png">
+			</div>
+			<div class="image">
+				<p>When we embarked on an iPad app redesign, we turned another feed reader with few visual templates into a stylized experience that amplified the voice and art direction of every section.</p>
+			</div>
+</div>
+
+<div class="slide" id="slide2">
+				<img class="full" src="imgs/ipad-sideby.png">
+</div>
+
+<div class="slide" id="slide2">
+		<div class="intro"><p>We managed to elevate the UX of the apps at the same time as we introduced a more restrictive paid subsciption model. App ratings trended upwards, and digital revenues climbed.</p>
+			</div>
+</div>
+</div>
+
+	<div class="section" id="section2">
+
+<div class="slide" id="slide2">
+	<div class="intro"><h2>Case Study: Discovery</h2>
+<p>Readers flock to The New York Times for its curated selection of news from editors rather than algorithms. But The Times produces a firehose of great content every day, and only a small portion of it is Top News. How do you surface the remainder?</p>
+	</div>
+</div>
+
+<div class="slide" id="slide2">
+	<div class="imgsContainer">
+				<img class="landscape" src="imgs/recs.png">
+</div>
+<div class="image">
+<p>I proposed a sort of Tinder for news that would rely on a strong recommendation engine then under development.<br><br>
+	<a href="imgs/iphone-recs.png" target="_blank">See full concept &raquo;</a>
+	</div>
+	</div>
+
+	<div class="slide" id="slide2">
+		<div class="imgsContainer">
+					<img src="imgs/icymi.png">
+	</div>
+	<div class="image">
+	<p>When the recommendation quality couldn't support it, I suggested we pivot to a simpler solution. It made use of two basic pieces of information: an aggregate notion of the most popular stories, and which of those stories a user has seen.<br><br> The outcome was In Case You Missed It, a deduped list of trending stories.</p>
+		</div>
+		</div>
+
+</div>
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<p>Since leaving The Times last year, I've been working with a number of clients, including WNYC, Anchor, and Citymaps.</p>
+		</div>
+	</div>
+
+	<div class="section" id="section2">
+
+	<div class="slide" id="slide2">
+		<div class="imgsContainer">
+					<img class="landscape" src="imgs/anchor-sideby.png">
+	</div>
+		<div>
+			<p>Anchor is an audio-sharing platform experiencing fast organic growth.<br><br>I'm helping them convert new social referrals into app downloads.</p>
+		</div>
+	</div>
+
+	<div class="slide" id="slide2">
+
+	<div class="imgsContainer">
+		<img class="landscape" src="imgs/portlandia.png">
+</div>
+	<div>
+		<p>At WNYC, I'm exploring how a broadcaster can own the social relationship with its audience.<br><br> This wireframe shows an approach inspired by messaging.</p>
+	</div>
+</div>
+
+	<!-- <div class="slide" id="slide2">
+		<div class="imgsContainer">
+					<img class="landscape" src="imgs/citymaps.png">
+		</div>
+		<div>
+			<p>Citymaps wanted a more editorial presentation for their map collections. </p>
+		</div>
+	</div> -->
+
+</div>
+
+</body>
+</html>
