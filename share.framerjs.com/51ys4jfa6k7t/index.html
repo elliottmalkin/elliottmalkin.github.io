@@ -1,0 +1,85 @@
+<!DOCTYPE html><html><head>
+		<meta charset="utf-8">
+		
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<script src="//d1l6p2sc9645hc.cloudfront.net/tracker.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+		// This automatically sets the right viewport scale on mobile devices
+		(function() {
+ 		var scale = 1 / window.devicePixelRatio
+ 		var viewport = "width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=" + scale + ", user-scalable=no"
+ 		var iOS = /iPad|iPhone|iPod/.test(navigator.platform)
+ 		if (iOS) { viewport += ", shrink-to-fit=no" }
+ 		document.write("<meta name=\"viewport\" content=\"" + viewport + "\">")
+		})()
+		</script><meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png">
+		<link rel="apple-touch-icon" href="framer/images/icon-76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="framer/images/icon-120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="framer/images/icon-152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="framer/images/icon-180.png" sizes="180x180">
+		<link rel="apple-touch-icon" href="framer/images/icon-192.png" sizes="192x192">
+
+		<link rel="stylesheet" type="text/css" href="framer/style.css">
+
+		<script src="framer/coffee-script.js"></script>
+		<script src="framer/framer.js"></script>
+		<script src="framer/framer.generated.js"></script>
+		<script src="framer/framer.modules.js"></script>
+		<script src="framer/framer.init.js"></script>
+
+	<title>malktree-slider.framer</title><link type="text/css" rel="stylesheet" href="/static/main.css"></head>
+	<body>
+	
+
+<!-- Automatically inserted by share.framerjs.com -->
+<script type="text/javascript" src="/static/share.js"></script><style type="text/css">body {
+	margin: 0;
+}
+
+.framerContext {	
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	overflow: hidden;
+}
+
+.framerLayer {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-overflow-scrolling: touch;
+	-webkit-box-sizing: border-box;
+	-webkit-user-select: none;
+}
+
+.framerLayer input,
+.framerLayer textarea,
+.framerLayer select,
+.framerLayer option,
+.framerLayer div[contenteditable=true]
+{
+	pointer-events: auto;
+	-webkit-user-select: auto;
+}
+
+.framerDebug {
+	padding: 6px;
+	color: #fff;
+	font: 10px/1em Monaco;
+}
+</style><div id="FramerContextRoot-Default" class="framerContext"><div class="framerLayer DeviceBackground" name="" style="width: 1295px; height: 802px; display: block; opacity: 1; overflow: hidden; pointer-events: auto; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 1;"></div><div class="framerLayer DevicePhone" name="" style="width: 1295px; height: 802px; display: block; opacity: 1; overflow: hidden; pointer-events: auto; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 2;"><div class="framerLayer DeviceScreen" name="" style="width: 1295px; height: 802px; display: block; opacity: 1; overflow: hidden; pointer-events: auto; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 1;"><div class="framerLayer DeviceComponentPort" name="" style="width: 1295px; height: 802px; display: block; opacity: 1; overflow: hidden; pointer-events: auto; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 1;"><div class="framerLayer DeviceContent" name="" style="width: 1295px; height: 802px; display: block; opacity: 1; overflow: hidden; pointer-events: auto; transform-origin: 0% 0%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 1;"><div id="FramerContextRoot-Device" class="framerContext"><div class="framerLayer" name="artboard" style="width: 2127px; height: 1219px; display: block; opacity: 1; overflow: visible; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(-416.5px, -208.5px, 0px) scale(0.6579163248564397) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 1; background-color: rgb(0, 0, 0);"><div class="framerLayer" name="fullgrove" style="width: 2127px; height: 1219px; display: block; opacity: 1; overflow: visible; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; background-color: rgba(0, 0, 0, 0); background-image: url(http://share.framerjs.com/51ys4jfa6k7t/imported/malktree%20simple%20slider@1x/images/Layer-fullgrove-73A33C2C-01E8-4BE9-8C90-825C809470F4.png); z-index: 1;"></div><div class="framerLayer" name="title" style="width: 403px; height: 97px; display: block; opacity: 1; overflow: visible; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(861px, 79px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; background-color: rgba(0, 0, 0, 0); background-image: url(http://share.framerjs.com/51ys4jfa6k7t/imported/malktree%20simple%20slider@1x/images/Layer-title-54D1A67C-CABB-443D-9C24-6852871D4A5E.png); z-index: 6;"></div><div class="framerLayer" name="arrow" style="width: 46px; height: 25px; display: none; opacity: 1; overflow: visible; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(1041px, 1161px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; background-color: rgba(0, 0, 0, 0); background-image: url(http://share.framerjs.com/51ys4jfa6k7t/imported/malktree%20simple%20slider@1x/images/Layer-arrow-2B88244F-FCF8-4C8D-9957-F1D1A4D06B8B.png); z-index: 4;"></div><div class="framerLayer" name="" style="width: 1054.9920000000004px; height: 1219px; display: block; opacity: 1; overflow: hidden; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 124, 255, 0.498039); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 5;"><div class="framerLayer" name="cleveland" style="width: 2127px; height: 1219px; display: block; opacity: 1; overflow: visible; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; background-color: rgba(0, 0, 0, 0); background-image: url(http://share.framerjs.com/51ys4jfa6k7t/imported/malktree%20simple%20slider@1x/images/Layer-cleveland-086899B8-D881-4BD2-BE7F-933178DAB063.png); z-index: 1;"></div></div></div><div class="framerLayer" name="" style="width: 1295px; height: 10px; display: block; opacity: 0; overflow: visible; pointer-events: auto; transform-origin: 50% 50%; perspective: 0; transform: translate3d(-0.5px, 396px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgb(204, 204, 204); color: rgb(255, 255, 255); border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; z-index: 4;"><div class="framerLayer" name="fill" style="width: 642.32px; height: 10px; display: block; opacity: 1; overflow: hidden; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate(0px, 0px) scale(1) skew(0deg, 0deg) rotate(0deg); background-color: rgb(51, 51, 51); color: rgb(255, 255, 255); border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px; z-index: 1;"></div><div class="framerLayer" name="knob" style="width: 50px; height: 763px; display: block; opacity: 1; overflow: hidden; pointer-events: auto; transform-origin: 50% 50%; perspective: 0; transform: translate3d(617.32px, -376.5px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); box-shadow: rgba(0, 0, 0, 0.34902) 0px 1px 3px 0px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; z-index: 2;"></div></div></div></div><div class="framerLayer DeviceKeyboard" name="" style="width: 100px; height: 100px; display: block; opacity: 1; overflow: hidden; pointer-events: auto; transform-origin: 50% 50%; perspective: 0; transform: translate3d(597px, 802px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 2;"></div></div></div></div></div><div id="FramerContextRoot-Highlight" class="framerContext"><div class="framerLayer" name="" style="width: 100px; height: 100px; display: none; opacity: 1; overflow: hidden; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(40, 175, 250, 0.2); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 10000; border: 2px solid rgb(40, 175, 250);"></div><div class="framerLayer" name="" style="width: 100px; height: 100px; display: none; opacity: 1; overflow: hidden; pointer-events: none; transform-origin: 50% 50%; perspective: 0; transform: translate3d(0px, 0px, 0px) scale(1) scale3d(1, 1, 1) skew(0deg, 0deg) skewX(0deg) skewY(0deg) rotateX(0deg) rotateY(0deg) rotateZ(0deg); background-color: rgba(0, 0, 0, 0); color: rgb(255, 255, 255); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; z-index: 10000; font-weight: bold; font-style: normal; font-variant-caps: normal; font-size: 11px; line-height: normal; font-family: HelveticaNeue; text-align: center; letter-spacing: 0.4px;"><div style="color: rgb(255, 255, 255); display: inline-block; background-color: rgb(40, 175, 250); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; padding: 5px 8px; text-shadow: rgba(0, 0, 0, 0.0980392) 0px 1px 0px;"></div></div></div><div><header>
+	<a class="btn-open" href="http://framer.link/share.framerjs.com/download/51ys4jfa6k7t/project.zip" target="_blank">Open</a>
+	<a class="btn-dl" href="//share.framerjs.com/download/51ys4jfa6k7t/project.zip"><img src="/static/icon-dl.png"></a>
+</header>
+
+<a class="badge" href="http://framerjs.com/?utm_source=share.framerjs.com&amp;utm_medium=banner&amp;utm_campaign=product" target="_blank"></a></div></body></html>
