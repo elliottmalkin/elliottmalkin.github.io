@@ -122,6 +122,12 @@ img {float:left;
 				margin-right:4%;
 				max-width:40%}
 
+.sideby {float:left;
+				/*padding-top:.5em;*/
+				margin-left:12%;
+				margin-right:4%;
+				max-width:40%}
+
 .full {float:left;
 			/*padding-top:.5em;*/
 				max-width:70%;
@@ -244,12 +250,35 @@ img {float:left;
 		background: linear-gradient(#4BBFC3,#7BAABE);
 	}
 
-	#section2{
-		background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
-		background: -webkit-linear-gradient(#969AC6, #636F8F);
-		background: linear-gradient(#969AC6,#636F8F);
+	#section1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969AC6));
+		background: -webkit-linear-gradient(#7baabe, #969AC6);
+		background: linear-gradient(#7baabe,#969AC6);
 	}
 
+	#section2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#969AC6), to(#6255A2));
+		background: -webkit-linear-gradient(#969AC6, #6255A2);
+		background: linear-gradient(#969AC6,#6255A2);
+	}
+
+	#section3{
+		background: -webkit-gradient(linear, top left, bottom left, from(#6255A2), to(#4964AA));
+		background: -webkit-linear-gradient(#6255A2, #4964AA);
+		background: linear-gradient(#6255A2,#4964AA);
+	}
+
+	#section4{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4964AA), to(#AF4AC2));
+		background: -webkit-linear-gradient(#4964AA, #AF4AC2);
+		background: linear-gradient(#4964AA,#AF4AC2);
+	}
+
+	#section5{
+		background: -webkit-gradient(linear, top left, bottom left, from(#AF4AC2), to(#CC4A4A));
+		background: -webkit-linear-gradient(#AF4AC2, #CC4A4A);
+		background: linear-gradient(#AF4AC2,#CC4A4A);
+	}
  	/*Adding background for the slides
 	* --------------------------------------- */
 	/*#slide1{
@@ -291,8 +320,8 @@ img {float:left;
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage','fifthPage','sixthPage'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				anchors: ['1', '2', '3', '4','5','6'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#C63D0F', '#1BBC9B', '#7E8F7C'],
 				navigation: true,
 				navigationPosition: 'right',
 				slidesNavigation: true,
@@ -307,7 +336,8 @@ img {float:left;
 
 	<div class="section" id="section0">
 		<div class="intro"><h1>Ell<span id="io">io</span><span id="tt">tt</span> Malk<span id="in">in</span></h1>
-	<h3>Seasoned UX designer, product strategist, and manager of design teams.</h3></div></div>
+	<h3>Seasoned UX designer, product strategist, and manager of design teams.</h3>
+		</div></div>
 
 	<div class="section" id="section1">
 	    <div class="slide" id="slide1">
@@ -318,97 +348,97 @@ img {float:left;
 
 		<div class="slide" id="slide2">
 			<div class="imgsContainer">
-				<img class="landscape" src="imgs/android-sideby.png">
+				<img class="sideby" src="imgs/android-sideby.png">
 			</div>
 			<div class="image">
-				<p><!--Crafting a UX around the reversal of this structure was the central narrative of my role at The Times. And doing so in a way that significantly drove digital revenue.-->I set the focus on simplicity, usability and visual elegance as we matured the products in tandem with improvements to mobile operating systems.</p>
+				<p>I set the focus on simplicity, usability and visual elegance as we matured the products in tandem with improvements to mobile operating systems.</p>
 			</div>
 		</div>
 
-<div class="slide" id="slide2">
-<div class="imgsContainer">
-  <video class="landscape" height="680" controls autoplay id="myVideo">
-  <source src="imgs/nyt-vid.mp4" type="video/mp4"></video>
-</div>
-<div class="image">
-<p>In 2014, I advocated for a major investment to break the downstream dependence from our desktop website.<br><br>I used this design to show how it would open up a new generation of editorial styles.</p>
-</div>
-</div>
+		<div class="slide" id="slide2">
+		<div class="imgsContainer">
+		  <video class="landscape" height="680" controls autoplay id="myVideo">
+		  <source src="imgs/nyt-vid.mp4" type="video/mp4"></video>
+		</div>
+		<div class="image">
+		<p>In 2014, I advocated for a major investment to break the downstream dependence from our desktop website.<br><br>I used this design to show how it would open up a new generation of editorial styles.</p>
+		</div>
+		</div>
 
-<div class="slide" id="slide2">
+			<div class="slide" id="slide2">
 			<div class="imgsContainer">
 				<img class="landscape" src="imgs/ipad-2015.png">
 			</div>
 			<div class="image">
 				<p>When we embarked on an iPad app redesign, we turned another feed reader with few visual templates into a stylized experience that amplified the voice and art direction of every section.</p>
 			</div>
-</div>
-
-<div class="slide" id="slide2">
-				<img class="full" src="imgs/ipad-sideby.png">
-</div>
-
-<div class="slide" id="slide2">
-		<div class="intro"><p>We managed to elevate the UX of the apps at the same time as we introduced a more restrictive paid subsciption model. App ratings trended upwards, and digital revenues climbed.</p>
 			</div>
+
+			<div class="slide" id="slide2">
+							<img class="full" src="imgs/ipad-sideby.png">
+			</div>
+
+			<div class="slide" id="slide2">
+					<div class="intro"><p>We managed to elevate the UX of the apps at the same time as we introduced a more restrictive paid subsciption model. App ratings trended upwards, and digital revenues climbed.</p>
+						</div>
+			</div>
+			</div>
+
+<div class="section" id="section2">
+
+			<div class="slide" id="slide2">
+				<div class="intro"><h2>Case Study: Discovery</h2>
+			<p>Readers flock to The New York Times for its curated selection of news from editors rather than algorithms. But The Times produces a firehose of great content every day, and only a small portion of it is Top News. How do you surface the remainder?</p>
+				</div>
+			</div>
+
+			<div class="slide" id="slide2">
+				<div class="imgsContainer">
+							<img class="landscape" src="imgs/recs.png">
+			</div>
+			<div class="image">
+			<p>I proposed a sort of Tinder for news that would rely on a strong recommendation engine then under development.<br><br>
+				<a href="imgs/iphone-recs.png" target="_blank">See full concept &raquo;</a>
+				</div>
+				</div>
+
+				<div class="slide" id="slide2">
+					<div class="imgsContainer">
+								<img src="imgs/icymi.png">
+				</div>
+				<div class="image">
+				<p>When the recommendation quality couldn't support it, I suggested we pivot to a simpler solution. It made use of two basic pieces of information: an aggregate notion of the most popular stories, and which of those stories a user has seen.<br><br> The outcome was In Case You Missed It, a deduped list of trending stories.</p>
+					</div>
+					</div>
+
 </div>
-</div>
 
-	<div class="section" id="section2">
+	<div class="section" id="section3">
+					<div class="intro">
+						<p>Since leaving The Times last year, I've been working with a number of clients, including WNYC, Anchor, and Citymaps.</p>
+					</div>
+				</div>
 
-<div class="slide" id="slide2">
-	<div class="intro"><h2>Case Study: Discovery</h2>
-<p>Readers flock to The New York Times for its curated selection of news from editors rather than algorithms. But The Times produces a firehose of great content every day, and only a small portion of it is Top News. How do you surface the remainder?</p>
-	</div>
-</div>
+	<div class="section" id="section4">
 
-<div class="slide" id="slide2">
-	<div class="imgsContainer">
-				<img class="landscape" src="imgs/recs.png">
-</div>
-<div class="image">
-<p>I proposed a sort of Tinder for news that would rely on a strong recommendation engine then under development.<br><br>
-	<a href="imgs/iphone-recs.png" target="_blank">See full concept &raquo;</a>
-	</div>
-	</div>
+				<div class="slide" id="slide2">
+					<div class="imgsContainer">
+								<img class="landscape" src="imgs/anchor-sideby.png">
+				</div>
+					<div>
+						<p>Anchor is an audio-sharing platform experiencing fast organic growth.<br><br>I'm helping them convert new social referrals into app downloads.</p>
+					</div>
+				</div>
 
-	<div class="slide" id="slide2">
-		<div class="imgsContainer">
-					<img src="imgs/icymi.png">
-	</div>
-	<div class="image">
-	<p>When the recommendation quality couldn't support it, I suggested we pivot to a simpler solution. It made use of two basic pieces of information: an aggregate notion of the most popular stories, and which of those stories a user has seen.<br><br> The outcome was In Case You Missed It, a deduped list of trending stories.</p>
-		</div>
-		</div>
+				<div class="slide" id="slide2">
 
-</div>
-
-	<div class="section" id="section2">
-		<div class="intro">
-			<p>Since leaving The Times last year, I've been working with a number of clients, including WNYC, Anchor, and Citymaps.</p>
-		</div>
-	</div>
-
-	<div class="section" id="section2">
-
-	<div class="slide" id="slide2">
-		<div class="imgsContainer">
-					<img class="landscape" src="imgs/anchor-sideby.png">
-	</div>
-		<div>
-			<p>Anchor is an audio-sharing platform experiencing fast organic growth.<br><br>I'm helping them convert new social referrals into app downloads.</p>
-		</div>
-	</div>
-
-	<div class="slide" id="slide2">
-
-	<div class="imgsContainer">
-		<img class="landscape" src="imgs/portlandia.png">
-</div>
-	<div>
-		<p>At WNYC, I'm exploring how a broadcaster can own the social relationship with its audience.<br><br> This wireframe shows an approach inspired by messaging.</p>
-	</div>
-</div>
+				<div class="imgsContainer">
+					<img class="landscape" src="imgs/portlandia.png">
+			</div>
+				<div>
+					<p>At WNYC, I'm exploring how a broadcaster can own the social relationship with its audience.<br><br> This wireframe shows an approach inspired by messaging.</p>
+				</div>
+			</div>
 
 	<!-- <div class="slide" id="slide2">
 		<div class="imgsContainer">
@@ -421,40 +451,40 @@ img {float:left;
 
 </div>
 
-	<div class="section" id="section2">
-				<div class="slide" id="slide2">
-		<div class="intro">
-			<p>Along with UX design I am passionate about family history. I've  been quite active in the genealogical community, where I've worked to improve family tree visualization.</p>
-		</div>
-	</div>
+	<div class="section" id="section5">
+						<div class="slide" id="slide2">
+				<div class="intro">
+					<p>Along with UX design I am passionate about family history. I've  been quite active in the genealogical community, where I've worked to improve family tree visualization.</p>
+				</div>
+			</div>
 
-	<div class="slide" id="slide2">
-		<div class="imgsContainer">
-					<img class="landscape" src="imgs/victor.png">
-		</div>
-		<div>
-			<p>I built a genealogical repository that had some influence in the wider genealogical community, especially at <a href="https://gigaom.com/2013/05/27/how-ancestry-com-transforms-mounds-of-data-into-legible-digital-records/" target="_blank" class="large">Ancestry.com</a>.<br><br>
-				<a href="http://dziga.com/victor/" target="_blank">Explore repository &raquo;</a></p>
-		</div>
-	</div>
+			<div class="slide" id="slide2">
+				<div class="imgsContainer">
+							<img class="landscape" src="imgs/victor.png">
+				</div>
+				<div>
+					<p>I built a genealogical repository that had some influence in the wider genealogical community, especially at <a href="https://gigaom.com/2013/05/27/how-ancestry-com-transforms-mounds-of-data-into-legible-digital-records/" target="_blank" class="large">Ancestry.com</a>.<br><br>
+						<a href="http://dziga.com/victor/" target="_blank">Explore repository &raquo;</a></p>
+				</div>
+			</div>
 
-	<div class="slide" id="slide2">
-		<div class="imgsContainer">
-					<img class="landscape" src="imgs/treelines.png">
-		</div>
-		<div>
-			<p>For Treelines, a product concept for the genealogy market, I developed a style of visualization that married family trees and timelines.<br><br>Children (green) are nested under parents as both descendents and events in time.</p>
-		</div>
-	</div>
+			<div class="slide" id="slide2">
+				<div class="imgsContainer">
+							<img class="landscape" src="imgs/treelines.png">
+				</div>
+				<div>
+					<p>For Treelines, a product concept for the genealogy market, I developed a style of visualization that married family trees and timelines.<br><br>Children (green) are nested under parents as both descendents and events in time.</p>
+				</div>
+			</div>
 
-	<div class="slide" id="slide2">
-		<div class="imgsContainer">
-					<img class="landscape" src="imgs/treelines2.png">
-		</div>
-		<div>
-			<p>As children branch out from their families of origin and start households of their own, they transition from green to pink or blue.</p>
-		</div>
-	</div>
+			<div class="slide" id="slide2">
+				<div class="imgsContainer">
+							<img class="landscape" src="imgs/treelines2.png">
+				</div>
+				<div>
+					<p>As children branch out from their families of origin and start households of their own, they transition from green to pink or blue.</p>
+				</div>
+			</div>
 
 </div>
 
