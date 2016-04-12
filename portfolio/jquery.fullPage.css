@@ -80,12 +80,12 @@ html.fp-enabled,
 .fp-controlArrow.fp-prev {
     left: 50px;
     width: 0;
-    border-width: 38.5px 34px 38.5px 0;
+    border-width: 24.5px 0 24.5px 28px;
     border-color: transparent rgba(256,256,256,.3)  transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 66px;
-    border-width: 38.5px 0 38.5px 34px;
+    border-width: 24.5px 0 24.5px 28px;
     border-color: transparent transparent transparent rgba(256,256,256,.3) ;
 }
 .fp-scrollable {
