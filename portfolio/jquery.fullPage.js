@@ -1836,7 +1836,7 @@
                 lazyLoad(destiny);
             }
 
-            if(!options.loopHorizontal && options.controlArrows){
+            if(!options.loopHorizontal && options.controlArrows && screen.width >= 736){
                 //hidding it for the fist slide, showing for the rest
                 section.find(SLIDES_ARROW_PREV_SEL).toggle(slideIndex!==0);
 
