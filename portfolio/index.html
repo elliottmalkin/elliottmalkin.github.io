@@ -122,9 +122,10 @@
 			max-width:40%}
 
 	.full {
-		width:70%;
+		max-width:70%;
 		padding-bottom:2%;
 		margin:auto;
+    max-height:680px;
 	}
 
 	.image {float:left;
@@ -431,7 +432,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['', 'nyt', 'discovery', 'clients','family','thx'],
+				anchors: ['', 'nyt', 'discovery', 'more', 'clients','family','thx'],
 				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#C63D0F', '#1BBC9B', '#7E8F7C'],
 				navigation: true,
 				navigationPosition: 'right',
@@ -463,8 +464,8 @@
 
 	<div class="slide" id="slide2">
 	<div class="visual">
-	<img class="image" src="imgs/android-2011b.png">
-	<p>When I took on the role in 2011, story selection and layouts were determined by editors on the desktop website, then fed downstream to the mobile apps.<br><br>There was little to no variation across elements. Sentences were getting cut off. Headlines and images were uniform.</p>
+	<img class="image" src="imgs/android-2011.png">
+	<p>When I took on the role in 2011, story selection and layouts were determined by editors on the desktop website, then fed downstream to the mobile apps.<br><br>There was little to no variation across elements. Sentences were cut off. Headlines and images were uniform.</p>
 	</div></div>
 
 	<div class="slide" id="slide3">
@@ -476,7 +477,7 @@
 	<div class="slide" id="slide4">
 	<div class="visual">
 	<img class="image" src="imgs/iphone-packages.png">
-	<p>We added banner headlines and span photos.<br><br>This was before Android released Lollipop, so we still had more control over presentation on iOS.</p></div></div>
+	<p>We added banner headlines and span photos.<br><br>This was before Android released Lollipop, so there was still considerably more control over presentation on iOS.</p></div></div>
 
 	<div class="slide" id="slide5">
 	<div class="visual">
@@ -497,10 +498,9 @@
 	<p>In 2014, I advocated for a major investment to break the downstream dependence from our desktop website.<br><br>With this illustration I demonstrated how the investment would open up a new generation of editorial styles.</p>
 	</div></div>
 
-	<div class="slide" id="slide8">
+  <div class="slide" id="slide8">
 	<div class="visual">
-	<video controls autoplay id="myVideo">
-	<source src="imgs/android-2015.mp4" type="video/mp4"></video>
+	<img class="image" src="imgs/android-today.png">
 	<p>It all came to fruition in 2015.<br><br>We now had a set of apps written, designed, and edited expressly for Android, iOS, and mobile web.</p>
 	</div></div>
 
@@ -516,13 +516,13 @@
 
 	<div class="slide" id="slide2">
 	<div class="visual">
-	<img class="landscape" src="imgs/ipad-2015.png">
+	<img class="landscape" src="imgs/ipad-new.png">
 	<p>When we embarked on an iPad app redesign, we transformed another feed reader with few visual templates into a stylized experience that amplified the voice and art direction of every section.</p>
 	</div></div>
 
 	<div class="slide" id="slide3">
 	<div class="intro">
-	<p>As a product director, I pushed to incorporate full covers from the printed magazine for the first time. This required a new feed and additional workflow. A small victory that brought a steady dose of visual intelligence to the top of the app every week.</p>
+	<p>As a product director, I pushed to incorporate full covers from the print magazine for the first time. This required a new feed and additional workflow. A small victory that brought a steady dose of visual intelligence to the top of the app every week.</p>
 	</div></div>
 
 	<div class="slide" id="slide4">
@@ -568,31 +568,115 @@
 
 	<div class="slide" id="slide1">
 	<div class="intro">
-	<p>Since leaving The Times last year, I've been working with a number of clients, including Anchor and WNYC.</p>
+	<p>In addition to iterating on and maintaining our existing apps, I was also responsible for developing entirely new app concepts.</p>
+	</div></div>
+
+	<div class="slide" id="slide2">
+	<div class="visual">
+	<img class="image" src="imgs/nytgo.png">
+	<p>I helped develop the initial idea behind what later became <a href="http://www.nytimes.com/nytnow/" class="large">NYT Now</a>, the lighter-weight subscription news product targeted at millenials.</p>
+	</div></div>
+
+	<div class="slide" id="slide3">
+	<div class="visual">
+	<img class="image" src="imgs/nytgo2.png">
+	<p>A central goal of the app was to counteract the often-overwhelming river of mobile news. With a lighter volume and more summaries, it was meant to function as a digest of the news, at a cheaper price.<br><br>This initial concept is very close to what we launched the following year.</p>
+	</div></div>
+
+	<div class="slide" id="slide4">
+	<div class="intro">
+	<p>I was also responsible for the UX surrounding the integration of our apps into Android and iOS. From the app stores to the appearance of our Today widget to notifications, arguably the most important way an app reaches out through the device.</p>
+	</div></div>
+
+	<div class="slide" id="slide5">
+	<div class="visual">
+	<img class="image" src="imgs/alerts.png">
+	<p>Alerts are a powerful way of instantaneously reaching hundreds of thousands of users. But it's a blunt instrument that should be used sparingly.<br><br>By launching four additional sub-channels, we were able to reduce volume in the main channel (with less sports, for example) while allowing users with these additional interests to ask for more.</p>
+	</div></div>
+
+	<div class="slide" id="slide6">
+	<div class="visual">
+	<img class="image" src="imgs/alert-hook.png">
+	<p>The eventual plan is for Alerts to become far more granular. One key is to develop compelling editorial hooks pegged to major ongoing stories.</p>
+	</div></div>
+
+	<div class="slide" id="slide7">
+	<div class="visual">
+	<img class="image" src="imgs/breaking-alert.png">
+	<p>Unlike automated products like Google Alerts, we found that treating these alerts as handwritten elements like any other aspect of our coverage led to higher user satisfaction.</p>
+	</div></div>
+
+	<!-- <div class="slide" id="slide8">
+	<div class="intro">
+	<p>I was also responsible for the treatment of our brand in third party apps like Facebook, Flipboard, and Google Newsstand, particularly where we supplied them native feeds.</p>
+	</div></div>
+
+	<div class="slide" id="slide9">
+	<div class="visual">
+	<img class="image" src="imgs/newsstand.png">
+	<p>Something about working with third paty readers.</p>
+	</div></div>
+
+	<div class="slide" id="slide10">
+	<div class="visual">
+	<img class="image" src="imgs/instant.png">
+	<p>Something about working with Facebook to develop the Instant Article format.</p>
+	</div></div> -->
+
+</div>
+
+<div class="section" id="section4">
+
+	<div class="slide" id="slide1">
+	<div class="intro">
+	<p>Since leaving The Times last fall, I've been working with a number of clients, including Anchor and WNYC.</p>
 	</div>
 	</div>
 
 	<div class="slide" id="slide2">
 	<div class="visual">
-	<img class="landscape" src="imgs/anchor-sideby.png">
-	<p>Anchor is an audio-sharing platform experiencing fast organic growth.<br><br>I'm helping them convert new social referrals into app downloads.</p>
+	<img class="image" src="imgs/anchor.png">
+	<p>Anchor is an audio-sharing app experiencing fast organic growth. Think of it as Instagram for audio.<br><br>I'm helping them convert new social referrals into downloads.</p>
 	</div></div>
 
-	<div class="slide" id="slide3">
-	<img class="landscape" src="imgs/wnyc.png">
-	<p>At WNYC, I'm exploring how a broadcaster might own the social relationship with its audience.<br><br> This wireframe shows an approach inspired by messaging.</p>
-	</div>
-
-	<!-- <div class="slide" id="slide4">
+  <div class="slide" id="slide2">
 	<div class="visual">
-	<img class="landscape" src="imgs/citymaps.jpg">
-	<p>At Citymaps, I developed a simpler, more readable approach to their location guides.</p>
-	</div>
-	</div> -->
+	<img class="image" src="imgs/existing-anchor.png">
+	<p>At present, this is what users encounter in the browser, when "waves" are shared outside of the app.<br><br>What follows is my rapid redesign.</p>
+	</div></div>
+
+  <div class="slide" id="slide3">
+	<div class="visual">
+	<img class="full" src="imgs/anchor-sideby.png">
+	</div></div>
+
+  <div class="slide" id="slide4">
+	<div class="intro">
+	<p>At WNYC, I'm exploring how a broadcaster might own the social relationship with its audience, particularly in the context of messaging.<br><br>What follows are sketches showing how audio episodes might live inside a Slack-like environment.</p></div></div>
+
+	<div class="slide" id="slide5">
+  <div class="visual">
+	<img class="full" src="imgs/wnyc.png">
+	</div></div>
+
+	<div class="slide" id="slide6">
+  <div class="visual">
+	<img class="full" src="imgs/wnyc2.png">
+	</div></div>
+
+	<div class="slide" id="slide7">
+  <div class="visual">
+	<img class="full" src="imgs/wnyc3.png">
+	</div></div>
+
+	<div class="slide" id="slide8">
+  <div class="visual">
+	<img class="full" src="imgs/wnyc4.png">
+	</div></div>
 
 </div>
 
-<div class="section" id="section4">
+<div class="section" id="section5">
 
 	<div class="slide" id="slide1">
 	<div class="intro">
@@ -603,7 +687,7 @@
 	<div class="visual">
 	<img class="landscape" src="imgs/victor.png">
 	<p>In 2006, I built a <a class="large" href="http://dziga.com/victor/">genealogical repository</a> that had some influence in that world, particularly at <a class="large" href="https://gigaom.com/2013/05/27/how-ancestry-com-transforms-mounds-of-data-into-legible-digital-records/" class="large">Ancestry</a>.<br><br>
-	<!-- <a href="http://dziga.com/victor/" target="_blank">Explore repository &raquo;</a> -->
+
 	</p>
 	</div></div>
 
@@ -616,7 +700,7 @@
 	<div class="slide" id="slide4">
 	<div class="visual">
 	<img class="landscape" src="imgs/treelines2.png">
-	<p>When children branch out from their families of origin and start households of their own, they transition from green to a parental pink or blue.</p>
+	<p>When children branch out from their families of origin to start households of their own, they transition from green to a parental pink or blue.</p>
 	</div>
 	</div>
 
@@ -630,13 +714,13 @@
 	<div class="slide" id="slide6">
 	<div class="visual">
 	<img class="landscape" src="imgs/tree2.jpg">
-	<p>So I developed an approach where the spouses hang down at a 45 degree angle from any group of siblings. This guarantees that spouses are clearly attached to their mates, but are readable as a separate line.</p>
+	<p>So I developed an approach where the spouses hang at a 45 degree angle from any group of siblings. This guarantees that spouses are clearly attached to their mates, but are readable as a separate line.</p>
 	</div>
 	</div>
 
 </div>
 
-<div class="section" id="section5">
+<div class="section" id="section6">
 
 	<div class="intro">
 	<p>I am also host of the podcast <a class="large" href="http://www.thepeoplepodcast.com">The&nbsp;People</a>.<br><br>Thanks for stopping by!<br><a class="large" href="mailto:elliottmalkin@gmail.com">elliottmalkin@gmail.com</a></p>
