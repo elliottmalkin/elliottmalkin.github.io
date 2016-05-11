@@ -22,11 +22,11 @@
 html{background:#fff;color:#333;}
 body{text-align:center;margin:0px 0px 20px 0px;}
 #container{margin:auto;text-align:center;}
-.chicago{width:100%;min-width:100%;margin-bottom:44px}
+#chicago{width:100%;min-width:100%;margin-bottom:44px}
 
-h1{font-family:'Germania One'; color:white; position:absolute; font-size:74px; font-weight:400; margin:auto;top:9.5%;width:100%;	text-shadow: 0px 0px 30px black;}
+h1{font-family:'Germania One'; color:#FFFCF8; position:absolute; font-size:74px; font-weight:400; margin:auto;top:8.5%;width:100%;opacity:.95;text-shadow: 0px 0px 30px black;}
 
-h2{font-family:'Avenir';weight:300;position:absolute;font-size:19px;margin:auto;color:white;width:100%;top:69%;}
+h2{font-family:'Avenir';weight:300;position:absolute;font-size:19px;color:white;width:100%;	text-shadow: 0px 0px 30px black;}
 
 h3{font-family:'Merriweather', serif;font-size:22px;margin:0;font-style:none;text-align:center;margin-bottom:24px;color:#999;}
 .dropcap{font-family:'Germania One';float:left;font-size:60px;margin-right:6px;line-height:.9;margin-top:4px;font-weight:bold;margin-left:2px;}
@@ -102,19 +102,27 @@ label {display: block;padding: 5px 0 0 0;color: #666;font-size: 13px;float: righ
 #show_comments {width:280px}
 #author, #url, #email {width:145px}
 }
-
-
 </style>
+
+<script>
+function hpositions() {
+console.log(document.getElementById("chicago").height);
+document.getElementById("title").style.top = document.getElementById("chicago").height * .12;
+document.getElementById("title").style.top = document.getElementById("title").style.top + "px";
+document.getElementById("subtitle").style.top = document.getElementById("chicago").height * .9;
+document.getElementById("subtitle").style.top = document.getElementById("subtitle").style.top + "px";
+console.log(document.getElementById("subtitle").style.top);}
+document.getElementById("subtitle").onresize = hpositions();
+</script>
+
 </head>
 
-<body>
+<body onresize="hpositions()">
         <div id="container">
 
-		<img src="http://dziga.com/the-grove/Malkin-Family-Portrait.jpg" class="chicago">
-
-<h1>The Grove</h1>
-<h2>A family heirloom comes into focus</h2>
-
+		<img src="http://dziga.com/the-grove/Malkin-Family-Portrait.jpg" id="chicago" onload="hpositions()">
+    <h1 id="title">The Grove</h1>
+    <h2 id="subtitle">A family heirloom comes into focus</h2>
 				<p><span class="dropcap">A</span>nyone who’s been to my apartment knows about the ancestors above my dining room table. They live in a portrait I inherited in 2008, the crown jewel of my genealogical nerdery. At the center is my great grandfather Leo Malkin, flanked by his five siblings and their respective families. The year is 1923.</p>
 
 				<p>I first posted the photo in 2010 as part of a short profile of my great great grandfather <a href="http://dziga.com/my-name-is-zalman-malkin/">Zalman Malkin</a>, the immigrant patriarch of this clan, whose life I attempted to reconstruct from historical records. At the time, I mistakenly assumed the portrait was taken in Douglas Park, the largest city park near the families’ homes on the west side of Chicago.</p>
@@ -206,4 +214,5 @@ label {display: block;padding: 5px 0 0 0;color: #666;font-size: 13px;float: righ
 				<p class="footnote">A note about the Hurwiches: I'm almost certain that Ben Hurwich would be among the relatives in the second photo. I just have no way of identifying him. Not only did Ben <a href="http://www.dziga.com/the-grove/1920-Max-Malkin-census.jpg" style="color:#999">live at the farm and work with Max Malkin as a bartender</a>, he and his brother Maurice helped their brother-in-law Max buy the property. (Max was married to Annie Hurwich.) On top of that, Maurice Hurwich's father-in-law Lester Levie lived on the farm after separating from his wife. So Max's connections to the Hurwiches run deep. Both families were from the same small town in Lithuania called <a href="http://kehilalinks.jewishgen.org/pandelys/body_index.html" style="color:#999">Pandelys</a>.</p>
 
 </body>
+
 </html>
