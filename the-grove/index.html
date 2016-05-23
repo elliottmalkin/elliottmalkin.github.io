@@ -87,22 +87,24 @@ p.asterisk{text-align:center;margin-top:0px;padding-bottom:18px;}
 <script>
 function hpositions() {
 console.log(document.getElementById("chicago").height);
-if (document.documentElement.clientWidth < 737) {
-document.getElementById("title").style.top = document.getElementById("chicago").height * .12;
-document.getElementById("title").style.top = document.getElementById("title").style.top + "px";
-document.getElementById("subtitle").style.top = document.getElementById("chicago").height * .9;
-document.getElementById("subtitle").style.top = document.getElementById("subtitle").style.top + "px";
-document.getElementById("title").style.opacity = .95;
-document.getElementById("subtitle").style.opacity = .95;}
+if (document.documentElement.clientWidth > 736) {
+  document.getElementById("title").style.top = document.getElementById("chicago").height * .12;
+  document.getElementById("title").style.top = document.getElementById("title").style.top + "px";
+  document.getElementById("subtitle").style.top = document.getElementById("chicago").height * .9;
+  document.getElementById("subtitle").style.top = document.getElementById("subtitle").style.top + "px";
+  document.getElementById("title").style.opacity = .95;
+  document.getElementById("subtitle").style.opacity = .95;
+  }
 else {
-document.getElementById("title").style.top = document.getElementById("chicago-mobile").height * .12;
-document.getElementById("title").style.top = document.getElementById("title").style.top + "px";
-document.getElementById("subtitle").style.top = document.getElementById("chicago-mobile").height * .9;
-document.getElementById("subtitle").style.top = document.getElementById("subtitle").style.top + "px";
-document.getElementById("title").style.opacity = .95;
-document.getElementById("subtitle").style.opacity = .95;
+  document.getElementById("title").style.top = document.getElementById("chicago-mobile").height * .12;
+  document.getElementById("title").style.top = document.getElementById("title").style.top + "px";
+  document.getElementById("subtitle").style.top = document.getElementById("chicago-mobile").height * .9;
+  document.getElementById("subtitle").style.top = document.getElementById("subtitle").style.top + "px";
+  document.getElementById("title").style.opacity = .95;
+  document.getElementById("subtitle").style.opacity = .95;
+  }
+console.log(document.getElementById("subtitle").style.top);
 }
-console.log(document.getElementById("subtitle").style.top);}
 document.getElementById("subtitle").onresize = hpositions();
 </script>
 
