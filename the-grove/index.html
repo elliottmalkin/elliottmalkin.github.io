@@ -81,10 +81,23 @@ p.asterisk{text-align:center;margin-top:0px;padding-bottom:18px;}
 .cleveland-id{display:none}
 .cleveland-id-mobile{width:100%;margin:0 0 22px 0;display:block}
 .tree{display:none}
-.treemobile{display:inline-block;width:80%;margin-bottom:12px;}
-.treeholder{width:100%;line-height:1.25;font-size:14px;display:table;}
-.branch{width:100%;float:left;display:table-cell;margin-left:-10px;}
 .treetext{width:50%;display:table-cell;vertical-align:bottom;padding-bottom:40px;}
+}
+.treemobile{margin-bottom:12px;max-width:736px;}
+.treeholder{line-height:1.25;font-size:14px;height:200px;}
+.treebranch{float:left;clear:both;max-width:200px;}
+.center-table {
+  display: table;
+  font-family:'Open Sans';
+  height:100%;
+  max-width:200px;
+  padding-left:20px;
+}
+.center-table p {
+  display: table-cell;
+  margin: 0;
+  padding:10px;
+  vertical-align: middle;
 }
 </style>
 
@@ -177,14 +190,44 @@ document.getElementById("subtitle").onresize = hpositions();
 				<span class="treeholder" style="width:10%"><img src="http://dziga.com/the-grove/8-malktree.jpg" class="branch"><b>Mendel Malkin</b><br>the youngest sibling, not yet married</span></span>
 				</span>
 
-				<span class="treemobile">
-				<span class="treeholder"><img src="http://dziga.com/the-grove/1-malktree.png" class="branch"><span class="treetext" style="padding-bottom:38px"><b>Leo Malkin</b> &&nbsp;Ginda&nbsp;Davidovitch<br>Mae, Adele, Morris, Ben,&nbsp;Sam</span></span>
-				<span class="treeholder"><img src="http://dziga.com/the-grove/2-malktree.png" class="branch"><span class="treetext" style="padding-bottom:40px"><b>Max Malkin</b> &&nbsp;Annie&nbsp;Hurwich<br>David, Bob, Leon</span></span>
-				<span class="treeholder" style="margin-top:8px"><img src="http://dziga.com/the-grove/3-malktree.png" class="branch"><span class="treetext" style="padding-bottom:46px"><b>Nettie Malkin</b> &&nbsp;Morris&nbsp;Alpert<br>Ann, Irving, Ceil</span></span>
-				<span class="treeholder" style="margin-top:6px"><img src="http://dziga.com/the-grove/4-malktree.png" class="branch"><span class="treetext" style="padding-bottom:54px"><b>Eva Malkin</b> &&nbsp;Lou&nbsp;Lissitz<br>Sarah, Sam, Anne</span></span>
-				<span class="treeholder" style="margin-top:5px;"><img src="http://dziga.com/the-grove/5-malktree.png" class="branch" style="margin-left:-5px"><span class="treetext" style="padding-bottom:54px"><b>Abe Malkin</b> &&nbsp;Libby&nbsp;Slavin<br>Anita, Julius</span></span>
-				<span class="treeholder"><img src="http://dziga.com/the-grove/8-malktree.png" class="branch" style="width:90px;margin-left:30px;"><span class="treetext" style="padding-bottom:54px"><b>Mendel Malkin</b><br>the youngest sibling, not yet married</span></span>
-				</span>
+        <div class="treemobile">
+
+        <div class="treeholder">
+        <img src="http://dziga.com/the-grove/1-malktree.png" class="treebranch">
+        <div class="center-table">
+        <p><b>Leo Malkin</b><br>Ginda&nbsp;Davidovitch<br>Mae, Adele, Morris, Ben,&nbsp;Sam</p>
+        </div></div>
+
+        <div class="treeholder">
+        <img src="http://dziga.com/the-grove/2-malktree.png" class="treebranch">
+        <div class="center-table">
+        <p><b>Max Malkin</b> &&nbsp;Annie&nbsp;Hurwich<br>David, Bob, Leon </p>
+        </div></div>
+
+        <div class="treeholder">
+        <img src="http://dziga.com/the-grove/3-malktree.png" class="treebranch">
+        <div class="center-table">
+        <p><b>Nettie Malkin</b> &&nbsp;Morris&nbsp;Alpert<br>Ann, Irving, Ceil </p>
+        </div></div>
+
+        <div class="treeholder">
+        <img src="http://dziga.com/the-grove/4-malktree.png" class="treebranch">
+        <div class="center-table">
+        <p><b>Eva Malkin</b> &&nbsp;Lou&nbsp;Lissitz<br>Sarah, Sam, Anne </p>
+        </div></div>
+
+        <div class="treeholder">
+        <img src="http://dziga.com/the-grove/5-malktree.png" class="treebranch">
+        <div class="center-table">
+        <p><b>Abe Malkin</b> &&nbsp;Libby&nbsp;Slavin<br>Anita, Julius </p>
+        </div></div>
+
+        <div class="treeholder">
+        <img src="http://dziga.com/the-grove/8-malktree.png" class="treebranch">
+        <div class="center-table">
+        <p><b>Mendel Malkin</b><br>the youngest sibling, not yet married </p>
+        </div></div>
+
 
 <p>Two other sets of relatives appeared in both photos that&nbsp;day:</p>
 
