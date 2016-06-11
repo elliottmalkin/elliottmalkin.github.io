@@ -19,16 +19,7 @@
 <style type="text/css">
 
 html{background:#fff;color:#333;}
-body{text-align:center;margin:0px 0px 20px 0px;min-width:800px}
-#container{margin:auto;text-align:center;}
-#chicago{width:100%;min-width:100%;margin-bottom:44px}
-#chicago-mobile{display:none}
-
-h1{font-family:'Germania One'; color:#FFFCF8; position:absolute; font-size:78px; font-weight:400; margin:auto;width:100%;opacity:0;text-shadow: 0px 0px 30px black;min-width:800px}
-
-h2{font-family:'Open Sans';font-weight:400;position:absolute;font-size:24px;font-style:italic;color:white;width:100%;	text-shadow: 0px 0px 30px black;opacity:0;min-width:800px}
-
-h3{display:none}
+body{text-align:center;margin:0px 0px 20px 0px}
 
 .dropcap{font-family:'Germania One';float:left;font-size:62px;margin-right:6px;line-height:.9;margin-top:3px;font-weight:bold;margin-left:-1px;}
 .dropcap2{font-family:'Germania One';float:left;font-size:62px;margin-right:8px;line-height:.9;margin-top:4px;font-weight:bold;margin-left:2px;}
@@ -50,13 +41,11 @@ p.byline{color:#666;font-style:italic;}
 .tree{width:100%;font-family:'Open Sans'}
 .treeholder{width:18%;float:left;line-height:1.25;display:inline-block;font-size:14px;color:#333}
 .branch{width:100%;margin:0;}
-.treemobile{display:none;}
 a{color:black;font-weight:700;text-decoration:none;color:#333}
 a:visited{color:black;font-weight:700;text-decoration:none;color:#333}
 p.appendix{font-family:'Merriweather';color:#999;}
 a:hover{color:black;text-decoration:underline}
 
-@media only screen and (max-device-width : 736px)  {
 body{min-width:0}
 h1{font-size:54px;text-shadow: 0px 0px 20px black;min-width:0px}
 h2{font-size:17px;min-width:0px}
@@ -80,6 +69,7 @@ p.asterisk{text-align:center;margin-top:0px;padding-bottom:18px;}
 .cleveland-id{display:none}
 .cleveland-id-mobile{width:100%;margin:0 0 22px 0;display:table}
 .tree{display:none}
+
 .treemobile{margin-bottom:12px;max-width:736px}
 .treeholder-mobile{line-height:1.25;font-size:14px;display:flex;justify-content: center;flex-wrap:nowrap;max-height:30%;}
 .treebranch{width:50%;margin:auto;padding-left:5%}
@@ -97,7 +87,9 @@ p.asterisk{text-align:center;margin-top:0px;padding-bottom:18px;}
   margin:0;padding:0;
 }
 
-}
+/*.mendel{float:left;max-width:118px;margin-left:20px;}
+.treeholder-mendel{line-height:1.25;font-size:14px;height:174px;clear:both;margin:auto;width:80%;}*/
+
 </style>
 
 <script>
@@ -200,37 +192,37 @@ document.getElementById("subtitle").onresize = hpositions();
 
         <div class="treeholder-mobile">
         <img src="http://dziga.com/the-grove/1-malktree.png" class="treebranch">
-        <div class="center-table">
+        <div class="treetext">
         <p><b>Leo Malkin</b><br>Ginda&nbsp;Davidovitch<br>Mae, Adele, Morris, Ben,&nbsp;Sam</p>
         </div></div>
 
         <div class="treeholder-mobile">
         <img src="http://dziga.com/the-grove/2-malktree.png" class="treebranch">
-        <div class="center-table">
+        <div class="treetext">
         <p><b>Max Malkin</b> &&nbsp;Annie&nbsp;Hurwich<br>David, Bob, Leon </p>
         </div></div>
 
         <div class="treeholder-mobile">
         <img src="http://dziga.com/the-grove/3-malktree.png" class="treebranch">
-        <div class="center-table">
+        <div class="treetext">
         <p><b>Nettie Malkin</b> &&nbsp;Morris&nbsp;Alpert<br>Ann, Irving, Ceil </p>
         </div></div>
 
         <div class="treeholder-mobile">
         <img src="http://dziga.com/the-grove/4-malktree.png" class="treebranch">
-        <div class="center-table">
+        <div class="treetext">
         <p><b>Eva Malkin</b> &&nbsp;Lou&nbsp;Lissitz<br>Sarah, Sam, Anne </p>
         </div></div>
 
         <div class="treeholder-mobile">
         <img src="http://dziga.com/the-grove/5-malktree.png" class="treebranch">
-        <div class="center-table">
+        <div class="treetext">
         <p><b>Abe Malkin</b> &&nbsp;Libby&nbsp;Slavin<br>Anita, Julius </p>
         </div></div>
 
         <div class="treeholder-mobile">
         <img src="http://dziga.com/the-grove/8-malktree.png" class="mendel">
-        <div class="center-table">
+        <div class="treetext">
         <p><b>Mendel Malkin</b><br>the youngest sibling, not yet married </p>
         </div></div>
 
@@ -248,13 +240,13 @@ document.getElementById("subtitle").onresize = hpositions();
 				<span class="treemobile">
           <div class="treeholder-mobile">
           <img src="http://dziga.com/the-grove/7-malktree.png" class="treebranch">
-          <div class="center-table">
+          <div class="treetext">
           <p>The five unknown <b>Lissitzes</b></p>
           </div></div>
 
           <div class="treeholder-mobile">
           <img src="http://dziga.com/the-grove/6-malktree.png" class="treebranch">
-          <div class="center-table">
+          <div class="treetext">
           <p>cousins<br>David Malkin &&nbsp;Kate&nbsp;Rizman<br>Arthur</p>
           </div></div>
 				</span>
