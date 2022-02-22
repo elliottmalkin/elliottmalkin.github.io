@@ -1,331 +1,45 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <head>
 
-<meta name="robots" content="noindex">
-   
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, width=device-width, user-scalable=1;" />
+<meta name="description" content="The website of Elliott Malkin." >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Merriweather">
+
 <title>Elliott Malkin</title>
 
 <style type="text/css">
+body{text-align:center;margin:auto;max-width:620px;width:100%;color:black}
+.chicago {margin-top:44px;max-width:100%;border:1px;border-style:solid;border-color:black}
+p{font-family:'Merriweather';font-size:17px;line-height:1.7;text-align:left;color:#333;padding:0 0 10px 0;}
+a{color:black; text-decoration:underline;}
+a:visited{color:black; text-decoration: underline;}
+p.star (font-size:52px;text-align:center:margin-top:24px;margin-bottom:24px}
 
-body, html{
-   background-color: #FFFFFF; 
-   margin:none;
+@media only screen and (max-width: 620px) {
+.chicago {margin-top:0px;max-width:100%;padding:0px 0 20px 0;}
+p {margin:0 20px 0px 20px;padding:0 0 16px 0;}
 }
 
-::selection {
-    color: white; 
-    background: blue;
-}
-
-
-
-#maincontent{
-   width:1040px;
-   margin:auto
-}
-
-
-.blockright {
-   float:right;
-   font-family: 'Apercu';
-   font-size:35px;
-   color: #000000;
-   width:360px;
-   display:block;
-   padding-top:180px;
-}
-
-
-.blockclear {
-   clear: both;
-   height:180px;
-   width:100%;
-}
-
-.maintext {
-   font-family: 'Apercu';
-   font-size:50px;
-   color:   #000000;
-}
-
-minisection_left {
-   width:675px;
-   float:left
-}
-
-
-.monotext {
-    font-family: 'apercu_monoregular';
-    font-size:14px;
-    color:#000000;
-    text-transform: uppercase;
-}
-
-.contact {
-   width:220px;
-   line-height: 16px;
-   float:left;
-   font-size:50px;
-}
-
-.talking {
-   width:220px;
-   line-height: 16px;
-   float:left;
-   font-size:50px;
-}
-
-.monoclear {
-   clear: both;
-   height:90px;
-}
-
-.listeningfix {
-   line-height: 55px;
-}
-
-.listening {
-   width:440px;
-   float:left;
-   font-size:50px;
-   line-height: 4px;
-
-}
-
-.minisection_right {
-   width:360px;
-   float: right;
-    font-family: 'apercu_monoregular';
-    font-size:14px;
-    color:#000000;
-    vertical-align: top !important;
-    margin-top: -139px;
-}
-
-.clients {
-   float:left;
-   width:180px;
-}
-
-.studios {
-   float:left;
-   width:180px;
-}
-
-a:link{
-   text-decoration:none;
-   color:#000000;
-   border-bottom: 4px solid #000000;
-}
-
-a:visited{
-   text-decoration:none;
-   color:#000000;
-}
-
-.blink_text {
-    color:red
-}
-
-   
-/* Smartphones (Medium phones) ----------- */
-@media only screen 
-and (device-width: 375px)
-and (-webkit-device-pixel-ratio: 3)  {
-   #maincontent{
-   width:94%;
-   margin:auto
-}
-
-   .blockright {
-   float:right;
-   font-family: 'Apercu';
-   font-size:50px;
-   color: #000000;
-   width:380px;
-   display:block;
-   padding-top:180px;
-   }
-
-   .maintext {
-   font-family: 'Apercu';
-   font-size:65px;
-   color:   #000000;
-   }
-   
-   .contact {
-   width:220px;
-   line-height: 16px;
-   display: block;
-   float: none;
-   font-size:65px;
-   margin-bottom: 120px
-   }
-
-   .talking {
-   width:220px;
-   line-height: 16px;
-   display: block;
-   float: none;
-   font-size:65px;
-   }
-   
-   .monoclear {
-   clear: both;
-   height:90px;
-   }
-   
-   .listeningfix {
-   line-height: 55px;
-   }
-   
-   .listening {
-   display: none;
-   }
-   
-.monotext {
-   display: none;
-    font-family: 'Apercu';
-    font-size:36px;
-    color:#000000;
-    text-transform: uppercase;
-    margin-bottom: 21px
-   }
-
-.minisection_right {
-   width:360px;
-   float: none;
-   font-family: 'Apercu';
-    font-size:36px;
-    color:#000000;
-    vertical-align: top !important;
-    margin-top: 120px;
-   }
-
-.clients {
-   float:none;
-   width:100%;
-   display: block;
-   margin-bottom: 140px;
-   }
-
-.studios {
-   float:none;
-   width:100%;
-   }
-
-/* END MEDIUM SMARTPHONES */
-   }
-   
-/* Smartphones (iPhone 12) ----------- */
-@media only screen 
-and (device-width: 390px)
-and (-webkit-device-pixel-ratio: 3)  {
-   #maincontent{
-   width:94%;
-   margin:auto
-}
-
-   .blockright {
-   float:right;
-   font-family: 'Apercu';
-   font-size:50px;
-   color: #000000;
-   width:380px;
-   display:block;
-   padding-top:180px;
-   font-weight:200;
-   }
-
-   .maintext {
-   font-family: 'Apercu';
-   font-size:65px;
-   color:   #000000;
-   }
-   
-   .contact {
-   width:220px;
-   line-height: 16px;
-   display: block;
-   float: none;
-   font-size:65px;
-   margin-bottom: 120px
-   }
-
-   .talking {
-   width:220px;
-   line-height: 16px;
-   display: block;
-   float: none;
-   font-size:65px;
-   }
-   
-   .monoclear {
-   clear: both;
-   height:90px;
-   }
-   
-   .listeningfix {
-   line-height: 55px;
-   }
-   
-   .listening {
-   display: none;
-   }
-   
-.monotext {
-   display: none;
-    font-family: 'Apercu';
-    font-size:36px;
-    color:#000000;
-    text-transform: uppercase;
-    margin-bottom: 21px
-   }
-
-.minisection_right {
-   width:360px;
-   float: none;
-   font-family: 'Apercu';
-    font-size:36px;
-    color:#000000;
-    vertical-align: top !important;
-    margin-top: 120px;
-   }
-
-.clients {
-   float:none;
-   width:100%;
-   display: block;
-   margin-bottom: 140px;
-   }
-
-.studios {
-   float:none;
-   width:100%;
-   }
-
-/* END iPHONE 12 */
-   }
 </style>
 
 </head>
 
-<body style="">
+<body>
 
-   <div id="maincontent">
+<img src="http://elliottmalkin.com/home-sick.jpg" class="chicago"/>
 
-      <div class="blockright">Elliott Malkin<br>Product & UX</div>
+<p class="star">&#9733;&#9733;&#9733;</p>
+   
+<p>This is the website of Elliott Malkin, where you'll find occasional posts about <a href="http://elliottmalkin.com/the-grove/">vintage family photos</a>, <a href="http://elliottmalkin.com/how-to-lose-your-religion-in-5-easy-steps/">the loss of religion</a>, and <a href="http://elliottmalkin.com/hyman-victor-revisited/">other ancestry-related material</a>. It’s also the home of projects like <a href="http://elliottmalkin.com/graffiti/">Graffiti for Butterflies</a>, <a href="http://elliottmalkin.com/laser/">The Laser Eruv</a>, and <a href="http://elliottmalkin.com/home-movie-reconstructions">Home Movie Reconstructions</a>, as well as the above photo, which <a href="http://www.robertamalkin.com/">his mother</a> took some time in the '80s. Other material here includes Elliott's <a href="http://elliottmalkin.com/tele-absence/">thoughts on tele-absence</a> and <a href="http://elliottmalkin.com/after-jerry">a short video about a man and his bird</a>.</p>
 
-      <div class="blockclear"></div>
-
-      <div class="maintext">
-         Elliott Malkin is a Staff Interaction Designer at <a href="https://workspace.google.com/">Google Workspace</a>. focusing on data analysis and ML-driven user assistance. Prior to Google, Elliott spent 4 years as Product Design Director for Mobile at The New York Times, building the company's first generation of mobile apps.
-         <br><br>
-         Elliott Malkin is a Staff Interaction Designer at <a href="https://workspace.google.com/">Google Workspace</a>. focusing on data analysis and ML-driven user assistance. Prior to Google, Elliott spent 4 years as Product Design Director for Mobile at The New York Times, building the company's first generation of mobile apps.
-
-   </div>
-
+<!-- <p>Latest: <a href="https://elliott.medium.com/when-i-was-about-12-years-old-my-dad-gave-me-his-old-baseball-cards-5fbf25abd229">The Lost Mantle</a> (June, 2021)</p>   
+   -->
+<p>Elliott is the host of <a href="http://www.thepeoplepodcast.com">The People Podcast</a>. Connect with him via <a href="https://twitter.com/elliott">Twitter</a>, <a href="http://instagram.com/elliottmalkin">Instagram</a>, <a href="https://medium.com/@elliott">Medium</a>, or elliott at&nbsp;dziga dot com.</p>
+  
 </body>
-
 </html>
