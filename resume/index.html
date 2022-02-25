@@ -20,22 +20,22 @@
     src: url("../fonts/hk-grotesk/HKGrotesk-Medium.otf") format("opentype");
 }
 
-body {font-size: 17px; font-family:'hk-grotesk', sans-serif; max-width:720px;margin:auto;background-color:white;}
-.content {line-height:26px;padding:24px;margin-top:6px;margin-bottom:12px;}
+body {font-size: 21px; font-family:'hk-grotesk', sans-serif; max-width:880px;margin:auto;background-color:white;}
+.content {line-height:32px;padding:24px;margin-top:6px;margin-bottom:12px;}
 img {max-width:320px;border-radius:4px;display:block;margin:auto;}
 a {color:black; text-decoration:underline}
 a:visited {color:black;}
 a:hover {text-decoration:underline;}
-h1 {font-family:'hk-grotesk';font-size: 22px;margin:18px 0 14px 0;font-weight:600;text-align:center;}
-.address {font-family:'hk-grotesk';margin-top:0px;text-align:center;margin-bottom:22px;font-size:14px;font-weight:100;margin-left:0px;}
-.bullets {font-family:'hk-grotesk';text-align:center;font-size:16px;font-weight:600;margin-top:20px;margin-bottom:10px;}
+h1 {font-family:'hk-grotesk';font-size: 26px;margin:18px 0 18px 0;font-weight:600;text-align:center;}
+.address {font-family:'hk-grotesk';margin-top:0px;text-align:center;margin-bottom:22px;font-size:17px;font-weight:100;margin-left:0px;}
+.bullets {font-family:'hk-grotesk';text-align:center;font-size:20px;font-weight:600;margin-top:20px;margin-bottom:10px;}
 b {font-weight:700}
-h2 {font-size: 17px;font-weight:400;margin-left:0px;margin-bottom:2px;line-height:28px}
-h3 {font-size: 17px;font-weight:600;margin-top:-4px;margin-bottom:0px;margin-left:0px;line-height:22px}
-h5 {font-size: 15px; font-weight:normal; margin: -2px 0 2px 0px;color:#999;font-style:italic;}
-h4 {font-family:'hk-grotesk';font-size: 18px; color:black; margin-top: 48px; font-weight:600; margin-bottom:0px;text-transform:uppercase;padding-bottom:0px;text-align:left;margin-left:0px;text-align:center;}
+h2 {font-size: 21px;font-weight:400;margin-left:0px;margin-bottom:2px;line-height:34px}
+h3 {font-size: 21px;font-weight:600;margin-top:-4px;margin-bottom:0px;margin-left:0px;line-height:26px}
+h5 {font-size: 18px; font-weight:normal; margin: -2px 0 2px 0px;color:#999;font-style:italic;}
+h4 {font-family:'hk-grotesk';font-size: 20px; color:black; margin-top: 48px; font-weight:600; margin-bottom:0px;text-transform:uppercase;padding-bottom:0px;text-align:left;margin-left:0px;text-align:center;}
 ul {margin:12px 0px 0px 3px; padding:0px; list-style-type:square;}
-li {margin:0px 24px 10px 24px; font-size:17px; line-height:24px;}
+li {margin:0px 24px 10px 24px; font-size:21px; line-height:30px;}
 #job {margin-bottom:34px;}
 #award {margin-bottom:14px;}
 p {margin:0;padding:0}
@@ -69,8 +69,15 @@ p {margin:0;padding:0}
 }
 hr.top {margin:12px 0 12px 0;} */
 
-@media only screen and (max-device-width : 720px) {
+@media only screen and (max-device-width: 400px) {
+body {font-size: 24px}
+h1 {font-size: 28px}
+.address {font-size:20px}
 .bullets{display:none}
+h2 {font-size: 24px;font-weight:400;margin-left:0px;margin-bottom:2px;line-height:28px}
+h3 {font-size: 24px;font-weight:600;margin-top:-4px;margin-bottom:0px;margin-left:0px;line-height:22px}
+h5 {font-size: 20px; font-weight:normal; margin: -2px 0 2px 0px;color:#999;font-style:italic;}
+h4 {font-size: 22px;}
 }
 
 </style>
@@ -83,9 +90,7 @@ hr.top {margin:12px 0 12px 0;} */
 
 	<h1>Elliott Malkin</h1>
 
-	<!-- <p style="margin-bottom:30px">Seasoned UX designer, crisp communicator, and playful innovator who brings clarity and focus to complex design work. Completing his fifth year on “the Editors” (Google Docs, Sheets, Slides, and Sites). Recent focus on <span style="font-weight:600">big data</span> and <span style="font-weight:600">ML-based assistance</span>. Prior to Google, spent 4 years as Product Design Director for Mobile at The New York Times, building the company's first generation of mobile apps.</p> -->
-
-	<!-- <hr style="margin-top:34px"> -->
+	<p style="margin-bottom:30px">Seasoned UX designer, product strategist, and playful innovator who brings clarity and focus to complex design work. Completing his fifth year on “the Editors” (Google Docs, Sheets, Slides, and Sites). Recent focus on big data and ML-based assistance. Prior to Google, spent 4 years as Product Design Director for Mobile at The New York Times, building the company's first generation of mobile apps.</p>
 
 	<div id="job">
 
@@ -98,7 +103,7 @@ hr.top {margin:12px 0 12px 0;} */
 <ul>
   <li>Developed two-year strategy for intelligent assistance and automation on Sheets.</li>
     <li>Conceived and designed <a href="https://venturebeat.com/2020/09/29/googles-smart-cleanup-taps-ai-to-streamline-data-entry/">Smart Cleanup</a>, an ML-based tool that accelerates the laborious process of cleaning spreadsheet data.</li>
-	<li>Built UX to support <span style="font-weight:600">billions</span> of rows of data in Sheets, a significant use case for enterprise customers.</li>
+	<li>Built UX to support billions of rows of data in Sheets, a significant use case for enterprise customers.</li>
 <li>Defined UX for integration of Looker, a <a href="https://techcrunch.com/2020/02/13/google-closes-2-6b-looker-acquisition/">major 2020 Google acquisition</a> unlocking access to 50+ big data sources in Sheets.</li>
 </li>
     <li>Revised Workspace to reflect Google's proprietary version of Material design.</li>
@@ -114,7 +119,9 @@ hr.top {margin:12px 0 12px 0;} */
 	<h3>Product Design Director, Mobile</h3>
 	<h5>2011 to 2015</h5>
 
-<p>Creative lead of cross-functional team of 25+ building award-winning news apps for iOS, Android, and mobile web. <a href="/portfolio">NYT portfolio</a></p>
+<p>Creative lead of cross-functional team of 25+ building award-winning news apps for iOS, Android, and mobile web.</p>
+
+<!-- <a href="/portfolio">NYT portfolio</a> -->
 
 <ul>
     <li>Grew paid readership, from inception of mobile pay model to > 1 million subscribers by&nbsp;2015.</li>
