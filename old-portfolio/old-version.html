@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Elliott Malkin</title>
+	<meta name="Resource-type" content="Document" />
+
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fira+Sans:500,400,300">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Slab:500,400,300">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+.section{
+		text-align:center;
+		}
+
+	h1{
+		font-size: 4em;
+		font-family: 'Fira Sans',arial,helvetica;
+		color: #fff;
+		margin:0 auto;
+		padding:0;
+		width:50%;
+		text-align:left;
+		line-height:1.1em;
+		font-weight:400;
+		letter-spacing:-.01em;
+		padding-left:.05em;
+	}
+
+#io {letter-spacing:-.02em;}
+#tt {letter-spacing:.04em;}
+#in {letter-spacing:-.05em;}
+
+	h2{
+		font-size: 3em;
+		font-family: 'Fira Sans',arial,helvetica;
+		color: #fff;
+		margin:0 auto;
+		padding:0;
+		width:50%;
+		text-align:left;
+		line-height:1.25em;
+	}
+
+	h3{
+		font-size: 2em;
+		line-height:1.25em;
+		font-family: 'Fira Sans',arial,helvetica;
+		font-weight: 200;
+		color: #fff;
+		margin:0 auto;
+		padding:0;
+		width:50%;
+		text-align:left;
+		padding-left:.35em;
+	}
+
+	a {font-size: .8em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+			text-decoration: none;
+			font-weight:400;
+			color: #fff
+		}
+
+	a.large {font-size: 1em;
+				font-family: 'Fira Sans',arial,helvetica;
+				color: #fff;
+				margin:0 auto;
+				padding:0;
+				width:50%;
+				text-align:left;
+				text-decoration: none;
+				font-weight:400;
+				color: #fff
+			}
+
+	p{
+				color: #fff;
+				font-size: 1.8em;
+				margin:0 auto;
+				width:70%;
+				text-align:left;
+				padding-top:.2em;
+				padding-bottom:3em;
+				line-height:1.25em;
+			}
+
+	.intro p{
+		color: #fff;
+		font-size: 1.8em;
+		margin:0 auto;
+		width:50%;
+		text-align:left;
+		padding-top:.2em;
+		padding-bottom:3em;
+		line-height:1.25em;
+	}
+
+	img {float:left;
+			margin-left:15%;
+			margin-right:4%;
+		}
+
+	video {float:left;
+			margin-left:15%;
+			margin-right:4%;
+			height:680px;
+		}
+
+	.landscape {float:left;
+			margin-left:12%;
+			margin-right:4%;
+			max-width:40%}
+
+	.full {float:center;
+		width:70%;
+		margin-bottom:2%;
+	}
+
+	.image {float:center;
+			text-align:left;
+			height:680px;
+			margin-bottom:2em;}
+
+	.icymi {float:center;
+			text-align:left;
+			height:680px;
+			margin-bottom:2em;}
+
+	.sideby {float:left;
+			margin-left:12%;
+			margin-right:4%;
+			max-width:50%;
+			margin-bottom:2em;}
+
+	.visual p{
+		color: #fff;
+		font-size: 1.8em;
+		text-align:left;
+		padding-bottom:3em;
+		line-height:1.25em;
+		margin-right:12%;
+	}
+
+@media only screen and (max-device-width : 720px) {
+
+	.fp-controlArrow {
+	      display:none;}
+
+	.landscape {float:center;
+			text-align:left;
+			max-width:70%;
+			margin:0 0 2em 0;}
+
+	.sideby {float:center;
+			text-align:left;
+			max-width:70%;
+			margin:0 0 2em 0;}
+
+	.full {float:center;
+			text-align:left;
+			width:80%;
+			max-width:80%;
+			margin:0 0 2em 0;}
+
+	.image {float:center;
+			text-align:left;
+			max-width:50%;
+			height:auto;
+			margin-bottom:2em;}
+
+	.icymi {float:center;
+			text-align:left;
+			max-width:42%;
+			height:auto;
+			margin-bottom:2em;
+	}
+
+	video {float:center;
+			text-align:left;
+			max-width:60%;
+			margin:0 0 2em 0;}
+
+	img {float:center;
+		margin: 0 auto;
+		max-width:0}
+
+	h1{
+			font-size: 5em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:64%;
+			text-align:left;
+			line-height:1.1em;
+			padding-left:.05em;
+		}
+
+	h2{
+			font-size: 4em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:70%;
+			text-align:left;
+			line-height:1.15em;
+		}
+
+	h3{
+			font-size: 3em;
+			line-height:1.25em;
+			font-family: 'Fira Sans',arial,helvetica;
+			font-weight: 200;
+			color: #fff;
+			margin:0 auto;
+			width:64%;
+			text-align:left;
+			padding-left:.35em;
+		}
+
+	a {font-size: 1em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+			text-decoration: none;
+			font-weight:500;
+			color: #fff
+			}
+
+	a.large {font-size: 1em;
+			font-family: 'Fira Sans',arial,helvetica;
+			color: #fff;
+			margin:0 auto;
+			padding:0;
+			width:50%;
+			text-align:left;
+			text-decoration: none;
+			font-weight:400;
+			color: #fff
+			}
+
+	p{
+			color: #fff;
+			font-size: 2.8em;
+			margin:0 auto;
+			width:70%;
+			text-align:left;
+			padding-top:.2em;
+			padding-bottom:3em;
+			line-height:1.25em;
+			}
+
+	.intro p{
+			color: #fff;
+			font-size: 2.8em;
+			margin:0 auto;
+			width:70%;
+			text-align:left;
+			padding-top:.2em;
+			padding-bottom:3em;
+			line-height:1.25em;
+		}
+
+	.visual p{
+			color: #fff;
+			font-size: 2.8em;
+			text-align:left;
+			padding-bottom:3em;
+			line-height:1.25em;
+			clear:both;
+		}
+
+		#fp-nav {
+		    position: fixed;
+		    z-index: 100;
+		    margin-top: -32px;
+		    top: 50%;
+		    opacity: 1;
+		    -webkit-transform: translate3d(0,0,0);
+		}
+		#fp-nav.right {
+		    right: 16px;
+		}
+		#fp-nav.left {
+		    left: 16px;
+		}
+		.fp-slidesNav{
+		    position: absolute;
+		    z-index: 4;
+		    left: 50%;
+		    opacity: 1;
+		}
+		.fp-slidesNav.bottom {
+		    bottom: 16px;
+		}
+		.fp-slidesNav.top {
+		    top: 16px;
+		}
+		#fp-nav ul,
+		.fp-slidesNav ul {
+		  margin: 0;
+		  padding: 0;
+		}
+
+		.fp-slidesNav ul li {
+		    display: block;
+		    width: 16px;
+		    height: 16px;
+		    margin: 14 10px 10px 10px;
+		    position:relative;
+		}
+
+		#fp-nav ul li {
+				display: block;
+				width: 16px;
+				height: 16px;
+				margin: 14px;
+				position:relative;
+	}
+
+		.fp-slidesNav ul li {
+		    display: inline-block;
+		}
+		#fp-nav ul li a,
+		.fp-slidesNav ul li a {
+		    display: block;
+		    position: relative;
+		    z-index: 1;
+		    width: 100%;
+		    height: 100%;
+		    cursor: pointer;
+		    text-decoration: none;
+		}
+		#fp-nav ul li a.active span,
+		.fp-slidesNav ul li a.active span,
+		#fp-nav ul li:hover a.active span,
+		.fp-slidesNav ul li:hover a.active span{
+		    height: 16px;
+		    width: 16px;
+		    margin: -2px 0 0 -4px;
+		    border-radius: 100%;
+		    background: white;
+		 }
+		#fp-nav ul li a span,
+		.fp-slidesNav ul li a span {
+		    border-radius: 50%;
+		    position: absolute;
+		    z-index: 1;
+		    height: 16px;
+		    width: 16px;
+		    border: 0;
+		    background: rgba(256,256,256,.3) ;
+		    left: 50%;
+		    top: 50%;
+		    margin: -2px 0 0 -4px;
+		    -webkit-transition: all 0.1s ease-in-out;
+		    -moz-transition: all 0.1s ease-in-out;
+		    -o-transition: all 0.1s ease-in-out;
+		    transition: all 0.1s ease-in-out;
+		}
+
+}
+
+	#section0{
+		background: -webkit-gradient(linear, top left, bottom left, from(#A251C6), to(#5862C7));
+		background: -webkit-linear-gradient(#A251C6, #5862C7);
+		background: linear-gradient(#A251C6,#5862C7);
+	}
+
+	#section1{
+		background: -webkit-gradient(linear, top left, bottom left, from(#5862C7), to(#AF4AC2));
+		background: -webkit-linear-gradient(#5862C7, #AF4AC2);
+		background: linear-gradient(#5862C7,#AF4AC2);
+	}
+
+	#section2{
+		background: -webkit-gradient(linear, top left, bottom left, from(#AF4AC2), to(#4964AA));
+		background: -webkit-linear-gradient(#AF4AC2, #4964AA);
+		background: linear-gradient(#AF4AC2,#4964AA);
+	}
+
+	#section3{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4964AA), to(#AF4AC2));
+		background: -webkit-linear-gradient(#4964AA, #AF4AC2);
+		background: linear-gradient(#4964AA,#AF4AC2);
+	}
+
+	#section4{
+		background: -webkit-gradient(linear, top left, bottom left, from(#AF4AC2), to(#4964AA));
+		background: -webkit-linear-gradient(#AF4AC2, #4964AA);
+		background: linear-gradient(#AF4AC2,#4964AA);
+	}
+
+	#section5{
+		background: -webkit-gradient(linear, top left, bottom left, from(#4964AA), to(#AF4AC2));
+		background: -webkit-linear-gradient(#4964AA, #AF4AC2);
+		background: linear-gradient(#4964AA,#AF4AC2);
+	}
+
+	#section6{
+		background: -webkit-gradient(linear, top left, bottom left, from(#AF4AC2), to(#4964AA));
+		background: -webkit-linear-gradient(#AF4AC2, #4964AA);
+		background: linear-gradient(#AF4AC2,#4964AA);
+	}
+
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['', 'nyt', 'discovery', 'clients','family','thx'],
+				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C', '#C63D0F', '#1BBC9B', '#7E8F7C'],
+				navigation: true,
+				navigationPosition: 'right',
+				slidesNavigation: true,
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+
+<div class="section" id="section0">
+
+	<div class="intro">
+	<h1>Ell<span id="io">io</span><span id="tt">tt</span> Malk<span id="in">in</span></h1>
+	<h3>Seasoned UX designer, product strategist, and manager of design teams.</h3>
+	</div>
+
+</div>
+
+<div class="section" id="section1">
+
+	<div class="slide" id="slide1">
+	<div class="intro"><h2>The New York&nbsp;Times</h2>
+	<p>As Mobile Product Design Director, I led a team to transform our apps from static feed readers into experiences purpose-built for mobile.</p>
+	</div></div>
+
+	<div class="slide" id="slide2">
+	<div class="visual">
+	<img class="sideby" src="imgs/android-2011.png">
+	<p>When I took on the role in 2011, story selection and layouts were determined by editors on the desktop website, then fed downstream to the mobile apps.<br><br>There was little to no variation across elements. Sentences were getting cut off. Headlines and images were uniform.</p>
+	</div></div>
+
+	<div class="slide" id="slide3">
+	<div class="visual">
+	<img class="image" src="imgs/iphone-packages.jpg">
+	<p>In time, we got better at interpreting those feeds. It seems trivial now, but in 2013 we were able to assemble articles into story groupings and vary the weight of headlines according to importance.</p>
+	</div></div>
+
+	<div class="slide" id="slide5">
+	<div class="visual">
+	<img class="image" src="imgs/paywall.png">
+	<p>While we made incremental improvements to presentation, we also launched a mobile subscription model.<br><br>The key was to design a metered experience that acquired paid subscribers without alienating non-subscribers. This was a huge moment in publishing that was emulated across the industry.</p>
+	</div></div>
+
+	<div class="slide" id="slide6">
+	<div class="visual">
+	<video controls autoplay id="myVideo">
+	<source src="imgs/nyt-vid.mp4" type="video/mp4"></video>
+	<p>In 2014, I advocated for a major investment to break the downstream dependence from our desktop website.<br><br>With this illustration I demonstrated how the investment would open up a new generation of editorial styles.</p>
+	</div></div>
+
+	<div class="slide" id="slide7">
+	<div class="visual">
+	<img class="image" src="imgs/android-2015.png">
+	<p>It all came to fruition in 2015.<br><br>We had turned a set of first-generation feed readers into a suite of dynamic apps written and edited expressly for mobile.</p>
+	</div></div>
+
+</div>
+
+<div class="section" id="section2">
+
+	<div class="slide" id="slide1">
+	<div class="intro">
+	<h2>Case Study: Discovery</h2>
+	<p>Readers flock to The New York Times for its curated selection of news from editors rather than algorithms. But The Times produces a firehose of great content every day, and only a small portion of it is Top News. How do you surface the remainder?</p>
+	</div></div>
+
+	<div class="slide" id="slide2">
+	<div class="visual">
+	<img class="landscape" src="imgs/ipad-2015.png">
+	<p>When we embarked on an iPad app redesign, we transformed another feed reader with few visual templates into a stylized experience that amplified the voice and art direction of every section.</p>
+	</div></div>
+
+	<div class="slide" id="slide3">
+	<div class="intro">
+	<p>As a product director, I pushed to incorporate full covers from the printed magazine for the first time. This required a new feed and additional workflow. A small victory that brought a steady dose of visual intelligence to the top of the app every week.</p>
+	</div></div>
+
+	<div class="slide" id="slide4">
+	<div class="visual">
+	<img class="full" src="imgs/ipad-sideby.png">
+  </div>
+	</div>
+
+	<div class="slide" id="slide5">
+	<div class="intro">
+	<p>I also restructured the app so that a broad swathe of content appears on the front page, not just Top News. This had the effect of distributing readership across the app in an unprecedented way. Viewership of the magazine, for instance, increased three-fold.</p>
+	</div></div>
+
+	<div class="slide" id="slide6">
+	<div class="visual">
+	<img class="landscape" src="imgs/recs.png">
+	<p>But we still faced the issue of readers feeling like they missed the best material from across The Times.<br><br>So I proposed a sort of Tinder for news that would rely on a strong recommendation engine then under development.<br><br>
+	<a href="imgs/iphone-recs.png" target="_blank">See full concept &raquo;</a>
+	</div></div>
+
+	<div class="slide" id="slide7">
+	<div class="visual">
+	<img class="icymi" src="imgs/icymi.png">
+	<p>When the recommendation engine didn’t perform as expected, I suggested we pivot to a simpler solution. It made use of two basic pieces of information: an aggregate notion of the most popular non-news stories, and which of those stories a user has seen.</p>
+	</div></div>
+
+	<div class="slide" id="slide8">
+	<div class="visual">
+	<img class="icymi" src="imgs/icymi-article.png">
+	<p>The end result was In Case You Missed It, an automated list of trending stories appended to every article.</p>
+	</div></div>
+
+</div>
+
+<div class="section" id="section3">
+
+	<div class="slide" id="slide1">
+	<div class="intro">
+	<p>Since leaving The Times last year, I've been working with a number of clients, including WNYC, Anchor, and Citymaps.</p>
+	</div>
+	</div>
+
+	<div class="slide" id="slide2">
+	<div class="visual">
+	<img class="landscape" src="imgs/anchor-sideby.png">
+	<p>Anchor is an audio-sharing platform experiencing fast organic growth.<br><br>I'm helping them convert new social referrals into app downloads.</p>
+	</div></div>
+
+	<div class="slide" id="slide3">
+	<img class="landscape" src="imgs/portlandia.png">
+	<p>At WNYC, I'm exploring how a broadcaster might own the social relationship with its audience.<br><br> This wireframe shows an approach inspired by messaging.</p>
+	</div>
+
+	<!-- <div class="slide" id="slide4">
+	<div class="visual">
+	<img class="landscape" src="imgs/citymaps.jpg">
+	<p>At Citymaps, I developed a simpler, more readable approach to their location guides.</p>
+	</div>
+	</div> -->
+
+</div>
+
+<div class="section" id="section4">
+
+	<div class="slide" id="slide1">
+	<div class="intro">
+	<p>Along with UX design I am passionate about family history. I've been quite active in the genealogical community, where I've worked to improve family tree visualization.</p>
+	</div></div>
+
+	<div class="slide" id="slide2">
+	<div class="visual">
+	<img class="landscape" src="imgs/victor.png">
+	<p>I built a genealogical repository that had some influence in the wider community, especially at <a href="https://gigaom.com/2013/05/27/how-ancestry-com-transforms-mounds-of-data-into-legible-digital-records/" target="_blank" class="large">Ancestry.com</a>.<br><br>
+	<a href="http://dziga.com/victor/" target="_blank">Explore repository &raquo;</a></p>
+	</div></div>
+
+	<div class="slide" id="slide3">
+	<div class="visual">
+	<img class="landscape" src="imgs/treelines.png">
+	<p>For Treelines, a product concept for the genealogy market, I developed a style of visualization that married family trees and timelines.<br><br>Children (green) are nested under parents as both descendents and events in time.</p>
+	</div></div>
+
+	<div class="slide" id="slide4">
+	<div class="visual">
+	<img class="landscape" src="imgs/treelines2.png">
+	<p>When children branch out from their families of origin and start households of their own, they transition from green to a parental pink or blue.</p>
+	</div>
+	</div>
+
+	<div class="slide" id="slide5">
+	<div class="visual">
+	<img class="landscape" src="imgs/tree.png">
+	<p>I've always found it frustrating that conventional trees display siblings alongside their spouses, on the same horizontal level. It's difficult to discern the siblings from the spouses, even with separate shapes and colors.</p>
+	</div>
+	</div>
+
+	<div class="slide" id="slide6">
+	<div class="visual">
+	<img class="landscape" src="imgs/tree2.jpg">
+	<p>So I developed an approach where the spouses hang down at a 45 degree angle from any group of siblings. This guarantees that spouses are clearly attached to their mates, but are readable as a separate line.</p>
+	</div>
+	</div>
+
+</div>
+
+<div class="section" id="section5">
+
+	<div class="intro">
+	<p>I am also host of the podcast <a class="large" href="http://www.thepeoplepodcast.com">The&nbsp;People</a>.<br><br>Thanks for stopping by!<br><a class="large" href="mailto:elliottmalkin@gmail.com">elliottmalkin@gmail.com</a></p>
+	</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
