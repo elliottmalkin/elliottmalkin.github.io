@@ -91,7 +91,11 @@ a:visited{
 
 @media only screen and (max-device-width: 400px) {
     .work-gif {float:none;width:100%;margin-right:50px;margin-top:6px;max-width:100%;margin-left:2px;}
-    .vid {float:left;width:50%%;margin-right:50px;margin-top:6px;max-width:100%;margin-left:2px;
+    .vid {float:left;width:50%%;margin-right:50px;margin-top:6px;max-width:100%;margin-left:2px;}
+    .project-container {display:flex; flex-direction:column-reverse}
+    .sub-project {order:3}
+    .sub-project-title {order:1}
+    .work-description {order:2}
   }
 
 </style>
@@ -114,11 +118,15 @@ a:visited{
 
             <p class="work-intro">This is just one example from a host of assistive features, including Smart Cleanup, Proactive Corrections, and Formula Suggestions.</p>
 
+             <span class="project-container">
+
               <img src="smart-fill.gif" class="work-gif">
 
               <h2 class="project-title">Smart Fill</h2>
 
               <p class="work-description">SmartFill is an example of proactive assistance that is highly contextual, extremely useful, previewable, and suppressible, but is only somewhat retrievable.</p>
+
+              </span>
 
               <p class="work-intro"></p>
 
