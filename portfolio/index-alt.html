@@ -1,0 +1,234 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta name="robots" content="noindex">
+
+<title>Elliott Malkin's Portfolio</title>
+
+<style type="text/css">
+
+@font-face {
+    font-family: hk-grotesk;
+    font-weight: lighter;
+    src: url("/fonts/hk-grotesk/HKGrotesk-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: hk-grotesk;
+    font-weight: 500;
+    src: url("/fonts/hk-grotesk/HKGrotesk-Medium.otf") format("opentype");
+}
+
+body, html{
+   background-color: #FFFFFF;
+   margin:40px;
+   margin-top:50px;
+   margin-bottom:50px;
+}
+
+#main{
+  font-family: 'hk-grotesk';
+  font-size: 40px;
+  font-weight:lighter;
+  max-width:1020px;
+  min-width:900px;
+  margin:auto
+}
+
+h1 {font-weight:500;font-size:46px;margin-bottom:0px}
+
+h2 {font-size:42px;}
+
+p {margin-top:4px;margin-bottom:48px;font-size:34px;line-height:44px;}
+
+.work {display:inline-block;margin-top:8px;margin-bottom:54px;clear:both;}
+
+.work-intro {clear:both;margin-top:4px;margin-bottom:24px;font-size:30px;line-height:40px;}
+
+.first {margin-bottom:32px;}
+
+.work-title {font-weight:500;margin:0;font-size:40px;margin-left:0px}
+
+.work-gif {float:left;width:58%;margin-right:30px;margin-top:6px;max-width:100%;margin-left:1px;
+    /* box-shadow:.5px 2px 4px hsl(0deg 0% 0% / 0.3);} */
+    border:1px solid lightgrey;}
+
+.no-border {border:none;margin-left:-1px}
+
+.stagger {margin-top:132px !important}
+
+.cropped {object-fit:cover;object-position:-120px 0px;width:580px;height:414px}
+
+.sub-project {margin-top:20px;}
+
+.project-title {font-weight:500;margin:0;font-size:30px;margin-left:0px;margin-top:-4px;margin-bottom:4px}
+
+.sub-project-title {font-weight:500;margin:0;font-size:30px;margin-left:0px;margin-top:36px;margin-bottom:4px}
+
+.work-description {overflow:hidden;font-size:22px;line-height:30px;margin-top:0px}
+
+.vid {float:left;width:42%;margin-right:30px;margin-top:6px;max-width:100%;margin-left:1px;
+  /* box-shadow:.5px 2px 4px hsl(0deg 0% 0% / 0.3);} */
+    border:1px solid lightgrey;}
+
+.vid-description {overflow:hidden;font-size:24px;line-height:30px;margin-top:12px;width:48%}
+
+.links {
+  font-weight: 500;
+  font-size:40px;
+  text-decoration:none;
+  margin-top:20px;
+}
+
+::selection {
+    color: black;
+    background: cyan;
+}
+
+a:link{
+   text-decoration:none;
+   color:#000000;
+   border-bottom: 3px solid #000000;
+}
+
+a:visited{
+   text-decoration:none;
+   color:#000000;
+}
+
+@media only screen and (max-device-width: 400px) {
+    h1 {font-size:50px}
+    p {font-size:44px;line-height:56px}
+    .work-title{font-size:48px}
+    .work-gif {float:none;width:100%;margin-right:50px;margin-top:6px;max-width:100%;margin-left:2px;border:2px solid lightgrey;}
+    .vid {float:left;width:88%;margin-right:50px;margin-top:6px;max-width:100%;margin-left:2px;}
+    .project-container {display:flex; flex-direction:column}
+    .stagger {margin-top:0px !important}
+    .sub-project {order:3}
+    .sub-project-title {order:1;font-size:42px}
+    .work-description {order:2}
+    .work-gif {order:3}
+    .no-border {border:none;margin-left:-1px}
+    .project-title {order:1;margin-top:16px;font-size:42px}
+    .work-description {order:2;margin-bottom:14px;font-size:40px;line-height:50px}
+    .vid-description {order:2;margin-bottom:14px;font-size:40px;line-height:50px;width:100%}
+    .work-intro{font-size:40px;line-height:52px}
+    .last{margin-bottom:20px}
+    .links{font-size:48px}
+    .mobile{margin-bottom:12px;}
+  }
+
+</style>
+
+</head>
+
+<body>
+
+   <div id="main">
+
+        <h1>Elliott Malkin / Recent Work</h1>
+
+        <p>A high-level selection of my recent work. Contact me for a deeper background on process, deliverables, and strategic context. I'd be happy to walk you through it!</p>
+
+        <!-- <p>A high-level selection of my recent work. I'm happy to walk you through a&nbsp;deeper background on these projects, including process, deliverables, and&nbsp;strategic context.</p> -->
+
+          <div class="work">
+
+            <h2 class="work-title">ML-Based Assistance</h2>
+
+            <p class="work-intro first">I developed a host of features to assist users with the critical, but painful, steps in data anlysis.</p>
+
+             <span class="project-container">
+
+              <img src="smartfill.gif" class="work-gif">
+
+              <h2 class="project-title">Smart Fill</h2>
+
+              <p class="work-description">Inputting data is time-consuming and tedious. So we developed SmartFill to input data automatically when we detect a pattern.</p>
+
+              </span>
+
+                <p class="work-intro"></p>
+
+                <span class="project-container">
+
+                  <img src="smart-cleanup.png" class="sub-project work-gif last">
+
+                  <h2 class="sub-project-title">Smart Cleanup</h2>
+
+                  <p class="work-description">Dirty data is the biggest barrier to analysis. So we developed a cleanup tool that detects semantic anomalies, inconsistencies, duplicates, and other issues. And allows the user to fix them with a single click.</p>
+
+                </span>
+
+                <p class="work-intro"></p>
+
+                <!-- <span class="project-container">
+
+                  <img src="formula-help.gif" class="sub-project work-gif">
+
+                  <h2 class="sub-project-title">Smart Formulas</h2>
+
+                  <p class="work-description">Writing formulas is like coding. It's not easy. So we created three tools that help users in this area, including an ML that predicts formulas for any cell, and responsive formula assistance (show here).</p>
+
+                </span> -->
+
+                <p class="work-intro"></p>
+
+                <span class="project-container">
+
+                  <img src="formula-help.gif" class="sub-project work-gif">
+
+                  <h2 class="sub-project-title">Smart Formulas</h2>
+
+                  <p class="work-description">Writing formulas is like coding. It's easy to get wrong. So we created a number of tools that help, including corrections, which flags mistakes and can be applied with a single click.</p>
+
+                </span>
+
+          </div>
+
+          <div class="work">
+
+            <h2 class="work-title">Big Data</h2>
+
+            <p class="work-intro">Spreadsheets have been an excellent tool for handling thousands of rows of data. Large enterprise customers needed a tool that could work with billions of rows of data.</p>
+
+              <img src="big-sheets.png" class="work-gif mobile no-border">
+
+              <p class="work-description stagger">Big Sheets allows users to easily build dashboards over these massive datasets. </p>
+
+          </div>
+
+        <!-- <div class="work">
+
+          <h2 class="work-title">Vehicle Emissions Analysis</h2>
+
+          <p class="work-intro">High-level overview of my recent work. I'm happy to walk you through my detailed process and give you more background on these projects.</p>
+
+            <img src="smart-fill.gif" class="work-gif mobile">
+
+            <p class="work-description">Built UX to support billions of rows of data in Sheets, a significant use case for enterprise customers. </p>
+
+        </div> -->
+
+        <div class="work">
+
+          <h2 class="work-title">The New York Times Mobile&nbsp;Transformation</h2>
+
+              <p class="work-intro">Ok, this is not exactly recent. But it's a good summation of my work in my previous role at The&nbsp;New&nbsp;York&nbsp;Times.</p>
+
+            <video controls autoplay class="vid mobile">
+          	<source src="nyt.mp4" type="video/mp4"></video>
+
+              <p class="vid-description">When I first joined The Times as a product design director, our mobile apps were simple feed readers, with no stylistic variation. Within a few years, we launched mobile apps with a more sophisticated editorial voice.</p>
+
+        </div>
+
+         <div class="links"><a href="https://www.elliottmalkin.com">Bio</a> / <a href="https://www.elliottmalkin.com/resume">Resume</a></div>
+
+   </div>
+   </div>
+
+</body>
+
+</html>
