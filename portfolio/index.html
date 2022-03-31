@@ -107,8 +107,10 @@ a:visited{
     .project-container {display:flex; flex-direction:column}
     .stagger {margin-top:0px !important}
     .sub-project {order:3}
-    .sub-project-title {order:1;font-size:42px}
     .work-description {order:2}
+    .sub-project-title {order:1;font-size:42px}
+    .image-second {order:2}
+    .text-first {order:1}
     .work-gif {order:3}
     .no-border {border:none;margin-left:-1px}
     .project-title {order:1;margin-top:16px;font-size:42px}
@@ -197,9 +199,10 @@ a:visited{
             <p class="work-intro"></p>
 
             <span class="project-container">
-            <img src="big-sheets.png" class="work-gif mobile no-border">
 
-            <p class="work-description stagger">It's called Big Sheets. And it allows users to both understand and analyze this data, as well as build dashboards over these massive datasets. </p>
+            <img src="big-sheets.png" class="image-second work-gif mobile no-border">
+
+            <p class="text-first work-description stagger">It's called Big Sheets. And it allows users to both understand and analyze this data, as well as build dashboards over these massive datasets. </p>
 
             </span>
 
@@ -233,11 +236,15 @@ a:visited{
 
               <p class="work-intro">Ok, this is not exactly recent. But it's a good summation of my work in my previous role at The&nbsp;New&nbsp;York&nbsp;Times.</p>
 
-            <video controls autoplay class="vid mobile">
+              <span class="project-container">
+
+            <video controls autoplay class="vid mobile image-second">
           	<source src="nyt.mp4" type="video/mp4"></video>
 
-              <p class="vid-description">When I first joined The Times as a product design director, our mobile apps were simple feed readers. There was little to no variation across elements.<br><br>So I advocated for a major investment to break the downstream dependence from our desktop website. By 2015 we had a set of apps written, designed, and edited expressly for Android, iOS, and mobile web.
+              <p class="vid-description text-first">When I first joined The Times as a product design director, our mobile apps were simple feed readers. There was little to no variation across elements.<br><br>So I advocated for a major investment to break the downstream dependence from our desktop website. By 2015 we had a set of apps written, designed, and edited expressly for Android, iOS, and mobile web.
               </p>
+
+</span>
 
         </div>
 
