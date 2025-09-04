@@ -1,10 +1,10 @@
 /*  
 Theme Name: Hyman Victor 
-Theme URI: http://dziga.com/
+Theme URI: http://elliottmalkin.com/
 Description: A custom template designed by Elliott Malkin, implemented by Dan Phiffer. 
 Version: 4.0
 Author: Elliott Malkin
-Author URI: http://dziga.com/
+Author URI: http://elliottmalkin.com/
 */
 
 *	{margin:0px; padding:0px}
@@ -27,7 +27,7 @@ body
     padding-bottom: 0px;
     height: 100%;
     background-color: #F0F8FF;
-    background-image:url(http://www.dziga.com/victor/bkgd.gif);
+    background-image:url(http://www.elliottmalkin.com/victor/bkgd.gif);
     background-position: center;
     background-repeat: repeat-y;
     }
@@ -79,7 +79,7 @@ a:hover {text-decoration: underline; color: #008CC0;}
     {
     width: 45px;
     height: 23px;
-    background: #FFF url(http://www.dziga.com/victor/next.gif) no-repeat 0 -46px;
+    background: #FFF url(http://www.elliottmalkin.com/victor/next.gif) no-repeat 0 -46px;
     }
     
     
@@ -98,18 +98,18 @@ a:hover {text-decoration: underline; color: #008CC0;}
 
 #header .nav .next a
 	{
-    background: #FFF url(http://www.dziga.com/victor/next.gif) no-repeat;
+    background: #FFF url(http://www.elliottmalkin.com/victor/next.gif) no-repeat;
 	}
 
 #header .nav .prev a
 	{
-    background: #FFF url(http://www.dziga.com/victor/prev.gif) no-repeat;
+    background: #FFF url(http://www.elliottmalkin.com/victor/prev.gif) no-repeat;
 	}
     
 #header .nav .index a
 	{
     width: 49px;
-    background: #FFF url(http://www.dziga.com/victor/index.gif) no-repeat;
+    background: #FFF url(http://www.elliottmalkin.com/victor/index.gif) no-repeat;
     }
     
 #header .nav .next a:hover,
