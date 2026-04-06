@@ -1098,7 +1098,7 @@ async function boot() {
   // Load games and signups in parallel
   try {
     const [gamesRes, signupsRes] = await Promise.all([
-      fetch('/games.json'),
+      fetch('./games.json'),
       fetch('/.netlify/functions/get-signups'),
     ]);
 
