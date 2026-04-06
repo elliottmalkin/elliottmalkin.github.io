@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Finesse — Snack Signup</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <!-- Netlify Identity Widget -->
@@ -641,23 +642,10 @@
 
 <script>
 // ─────────────────────────────────────────────────────────────────────────────
-// GAMES — edit this array to update the schedule.
-// Keep isoDate in sync with send-reminders.js.
+// GAMES — loaded from games.json at the repo root.
+// Edit that file to add, remove, or change games. No need to touch this file.
 // ─────────────────────────────────────────────────────────────────────────────
-const GAMES = [
-  { id:1,  date:'Sat, Mar 28', time:'10:00 AM', opponent:'FC Riverside',      home:true,  location:'' },
-  { id:2,  date:'Sat, Apr 4',  time:'11:00 AM', opponent:'Blue Wave SC',       home:false, location:'Blue Wave Complex, 45 Oak Ave' },
-  { id:3,  date:'Sat, Apr 11', time:'9:00 AM',  opponent:'Eastside United',    home:true,  location:'' },
-  { id:4,  date:'Sat, Apr 18', time:'10:30 AM', opponent:'North Stars FC',     home:false, location:'North Stars Park, 12 Elm St' },
-  { id:5,  date:'Sat, Apr 25', time:'9:00 AM',  opponent:'Westfield Athletic', home:true,  location:'' },
-  { id:6,  date:'Sat, May 2',  time:'11:00 AM', opponent:'Lakeside Rush',      home:false, location:'Lakeside Recreation, 88 Lake Dr' },
-  { id:7,  date:'Sat, May 9',  time:'10:00 AM', opponent:'Ridgeline FC',       home:true,  location:'' },
-  { id:8,  date:'Sat, May 16', time:'9:30 AM',  opponent:'Summit City SC',     home:false, location:'Summit Complex, 200 Hill Rd' },
-  { id:9,  date:'Sat, May 23', time:'10:00 AM', opponent:'Valley United',      home:true,  location:'' },
-  { id:10, date:'Sat, May 30', time:'11:00 AM', opponent:'Creekside FC',       home:false, location:'Creekside Fields, 5 Creek Ln' },
-  { id:11, date:'Sat, Jun 6',  time:'9:00 AM',  opponent:'Ironwood SC',        home:true,  location:'' },
-  { id:12, date:'Sat, Jun 13', time:'10:30 AM', opponent:'Playoff TBD',        home:false, location:'TBD' },
-];
+let GAMES = [];
 
 // ── STATE ─────────────────────────────────────────────────────────────────────
 let signups      = {};
@@ -713,19 +701,6 @@ async function getAuthHeaders() {
     'Content-Type': 'application/json',
     ...(token ? { Authorization: `Bearer ${token}` } : {}),
   };
-}
-
-async function loadSignups() {
-  try {
-    const res = await fetch('/.netlify/functions/get-signups');
-    if (!res.ok) throw new Error('Load failed');
-    signups = await res.json();
-    setStatus('');
-  } catch {
-    setStatus('Could not load signups — check your connection.', true);
-  }
-  render();
-  checkEditTokenInUrl();
 }
 
 async function apiPost(endpoint, body) {
@@ -1118,8 +1093,34 @@ document.addEventListener('keydown', e => {
 });
 
 // ── BOOT ──────────────────────────────────────────────────────────────────────
-netlifyIdentity.init();
-loadSignups();
+async function boot() {
+  netlifyIdentity.init();
+
+  // Load games and signups in parallel
+  try {
+    const [gamesRes, signupsRes] = await Promise.all([
+      fetch('/games.json'),
+      fetch('/.netlify/functions/get-signups'),
+    ]);
+
+    if (!gamesRes.ok) throw new Error('Could not load games.json');
+    GAMES = await gamesRes.json();
+
+    if (signupsRes.ok) {
+      signups = await signupsRes.json();
+    } else {
+      setStatus('Could not load signups — check your connection.', true);
+    }
+  } catch (e) {
+    setStatus('Could not load schedule — check your connection.', true);
+  }
+
+  setStatus('');
+  render();
+  checkEditTokenInUrl();
+}
+
+boot();
 </script>
 </body>
 </html>

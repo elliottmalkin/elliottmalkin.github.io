@@ -82,14 +82,38 @@ After adding variables, trigger a redeploy: **Deploys → Trigger deploy**.
 
 ## Updating the schedule
 
-Edit the `GAMES` array in `index.html` **and** the matching array in
-`netlify/functions/send-reminders.js`, then push:
+**Edit only `games.json`** — it is the single source of truth.
+Both the website and the reminder function read from it automatically.
+No other files need to change.
+
+```jsonc
+// games.json — each game looks like this:
+{
+  "id": 3,
+  "date": "Sat, Apr 11",      // display label shown on the page
+  "isoDate": "2026-04-11",    // machine-readable date used for reminders
+  "time": "9:00 AM",
+  "opponent": "Eastside United",
+  "home": false,
+  "location": "Eastside Park, 10 Main St"  // leave "" for home games
+}
+```
+
+**To add a game:** append a new object with a unique `id`.
+**To cancel a game:** delete its object from the array.
+**To change a date/time/location:** edit the relevant fields.
+
+Then commit and push — the site redeploys in ~30 seconds:
 
 ```bash
-git add .
+git add games.json
 git commit -m "Update schedule"
 git push
 ```
+
+> **Note on `isoDate`:** this must be in `YYYY-MM-DD` format for reminders
+> to fire correctly. If details aren't known yet, set `"isoDate": "TBD"` —
+> the reminder function will skip that game safely.
 
 ---
 

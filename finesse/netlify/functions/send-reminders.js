@@ -1,5 +1,6 @@
 // netlify/functions/send-reminders.js
-// Runs every morning at 9 AM UTC via the schedule in netlify.toml.
+// Runs every morning at 9 AM UTC (set in netlify.toml).
+// Reads the game schedule from games.json so it stays in sync automatically.
 //
 // Required environment variables (Netlify dashboard → Site → Environment variables):
 //   TWILIO_ACCOUNT_SID   — from console.twilio.com
@@ -9,22 +10,17 @@
 //   RESEND_FROM_EMAIL    — verified sender, e.g. reminders@yourdomain.com
 
 const { getStore } = require('@netlify/blobs');
+const fs           = require('fs');
+const path         = require('path');
 
-const GAMES = [
-  { id:1,  isoDate:'2026-03-28', opponent:'FC Riverside' },
-  { id:2,  isoDate:'2026-04-04', opponent:'Blue Wave SC' },
-  { id:3,  isoDate:'2026-04-11', opponent:'Eastside United' },
-  { id:4,  isoDate:'2026-04-18', opponent:'North Stars FC' },
-  { id:5,  isoDate:'2026-04-25', opponent:'Westfield Athletic' },
-  { id:6,  isoDate:'2026-05-02', opponent:'Lakeside Rush' },
-  { id:7,  isoDate:'2026-05-09', opponent:'Ridgeline FC' },
-  { id:8,  isoDate:'2026-05-16', opponent:'Summit City SC' },
-  { id:9,  isoDate:'2026-05-23', opponent:'Valley United' },
-  { id:10, isoDate:'2026-05-30', opponent:'Creekside FC' },
-  { id:11, isoDate:'2026-06-06', opponent:'Ironwood SC' },
-  { id:12, isoDate:'2026-06-13', opponent:'Playoff TBD' },
-];
+// ── Load games from the single source of truth ────────────────────────────────
+function loadGames() {
+  // __dirname is netlify/functions/ — go up two levels to repo root
+  const gamesPath = path.join(__dirname, '..', '..', 'games.json');
+  return JSON.parse(fs.readFileSync(gamesPath, 'utf8'));
+}
 
+// ── Helpers ───────────────────────────────────────────────────────────────────
 function daysUntil(isoDate) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -54,11 +50,23 @@ async function sendEmail(to, subject, text) {
   if (!res.ok) throw new Error(`Resend: ${await res.text()}`);
 }
 
+// ── Handler ───────────────────────────────────────────────────────────────────
 exports.handler = async () => {
+  let games;
+  try {
+    games = loadGames();
+  } catch (e) {
+    console.error('Could not load games.json:', e.message);
+    return { statusCode: 500, body: 'Could not load games.json' };
+  }
+
   const store  = getStore('signups');
   const errors = [];
 
-  for (const game of GAMES) {
+  for (const game of games) {
+    // Skip games without a real isoDate yet
+    if (!game.isoDate || game.isoDate === 'TBD') continue;
+
     const days = daysUntil(game.isoDate);
     if (days < 1) continue;
 
@@ -74,17 +82,12 @@ exports.handler = async () => {
     const msg = `Hi ${signup.name}! Reminder: you signed up to bring the post-game snack for Finesse vs ${game.opponent} on ${game.isoDate}. Go Finesse! ⚽`;
 
     if ((signup.remindHow === 'text' || signup.remindHow === 'both') && signup.phone) {
-      try { await sendText(signup.phone, msg); }
+      try   { await sendText(signup.phone, msg); }
       catch (e) { errors.push(`Text failed game ${game.id}: ${e.message}`); }
     }
     if ((signup.remindHow === 'email' || signup.remindHow === 'both') && signup.email) {
-      try {
-        await sendEmail(
-          signup.email,
-          `Snack reminder: Finesse vs ${game.opponent} on ${game.isoDate}`,
-          msg
-        );
-      } catch (e) { errors.push(`Email failed game ${game.id}: ${e.message}`); }
+      try   { await sendEmail(signup.email, `Snack reminder: Finesse vs ${game.opponent} on ${game.isoDate}`, msg); }
+      catch (e) { errors.push(`Email failed game ${game.id}: ${e.message}`); }
     }
   }
 
