@@ -1,9 +1,0 @@
-{
-  "name": "finesse-snacks",
-  "version": "2.0.0",
-  "description": "Post-game snack signup for Finesse Spring 2026",
-  "private": true,
-  "dependencies": {
-    "@netlify/blobs": "^8.1.0"
-  }
-}
