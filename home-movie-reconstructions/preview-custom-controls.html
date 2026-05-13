@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta charset="UTF-8" />
+<link href='https://fonts.googleapis.com/css2?family=EB+Garamond' rel='stylesheet' type='text/css'>
+<style>
+  body { font-family: 'EB Garamond', Georgia, serif; margin: 0; padding: 20px; background: #fff; }
+  #content { width: 700px; padding-left: 12px; padding-right: 16px; }
+  @media (max-width: 720px) { #content { width: 100%; padding: 0 12px; box-sizing: border-box; } }
+  h1 { font-size: 25px; margin-bottom: 18px; }
+  h3 { margin-top: 24px; }
+
+  .video-wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+    background: #000;
+    cursor: pointer;
+  }
+  .video-wrap video {
+    display: block;
+    width: 100%;
+  }
+  .play-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.25);
+    transition: background 0.15s;
+  }
+  .play-overlay:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+  .play-btn {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s, background 0.1s;
+  }
+  .play-overlay:hover .play-btn {
+    transform: scale(1.08);
+    background: rgba(255, 255, 255, 1);
+  }
+  .play-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 22px;
+    border-color: transparent transparent transparent #222;
+    margin-left: 5px;
+  }
+  .play-overlay.hidden {
+    display: none;
+  }
+  .meta { width: 100%; font-size: 14px; margin-bottom: 10px; overflow: hidden; }
+  .meta .left { float: left; }
+  .meta .right { float: right; }
+</style>
+</head>
+<body>
+<div id="content">
+  <h1>Home Movie Reconstructions</h1>
+  <p style="margin-bottom:30px;">A selection of home movie reconstructions documenting a 30 year gap at my parents' home in Lincolnwood, Illinois, including a visit to the (now former) Marco Polo Hotel in Miami Beach.</p>
+
+  <h3>Florida Hotel Reconstruction</h3>
+  <div class="video-wrap" onclick="playVideo(this)">
+    <video preload="metadata">
+      <source src="hotel.mp4" type="video/mp4">
+    </video>
+    <div class="play-overlay">
+      <div class="play-btn"></div>
+    </div>
+  </div>
+  <div class="meta">
+    <span class="left">1974 silent super8 film</span>
+    <span class="right">digital video 2004</span>
+  </div>
+
+  <h3>Dad Reconstruction</h3>
+  <div class="video-wrap" onclick="playVideo(this)">
+    <video preload="metadata">
+      <source src="dad.mp4" type="video/mp4">
+    </video>
+    <div class="play-overlay">
+      <div class="play-btn"></div>
+    </div>
+  </div>
+  <div class="meta">
+    <span class="left">1974 silent super8 film</span>
+    <span class="right">digital video 2004</span>
+  </div>
+
+  <h3>Mom Reconstruction</h3>
+  <div class="video-wrap" onclick="playVideo(this)">
+    <video preload="metadata">
+      <source src="mom.mp4" type="video/mp4">
+    </video>
+    <div class="play-overlay">
+      <div class="play-btn"></div>
+    </div>
+  </div>
+  <div class="meta">
+    <span class="left">1974 silent super8 film</span>
+    <span class="right">digital video 2004</span>
+  </div>
+
+  <h3>Dad Portrait Reconstruction</h3>
+  <div class="video-wrap" onclick="playVideo(this)">
+    <video preload="metadata">
+      <source src="dad-portrait.mp4" type="video/mp4">
+    </video>
+    <div class="play-overlay">
+      <div class="play-btn"></div>
+    </div>
+  </div>
+  <div class="meta">
+    <span class="left">1974 silent super8 film</span>
+    <span class="right">digital video 2004</span>
+  </div>
+
+  <h3>Mom Portrait Reconstruction</h3>
+  <div class="video-wrap" onclick="playVideo(this)">
+    <video preload="metadata">
+      <source src="mom-portrait.mp4" type="video/mp4">
+    </video>
+    <div class="play-overlay">
+      <div class="play-btn"></div>
+    </div>
+  </div>
+  <div class="meta">
+    <span class="left">1974 silent super8 film</span>
+    <span class="right">digital video 2004</span>
+  </div>
+</div>
+
+<script>
+function playVideo(wrap) {
+  var video = wrap.querySelector('video');
+  var overlay = wrap.querySelector('.play-overlay');
+  video.controls = true;
+  video.play();
+  overlay.classList.add('hidden');
+  video.addEventListener('pause', function() {
+    overlay.classList.remove('hidden');
+  });
+  video.addEventListener('ended', function() {
+    overlay.classList.remove('hidden');
+  });
+}
+</script>
+</body>
+</html>
