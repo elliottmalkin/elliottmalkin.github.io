@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Calendar - Elliott Malkin</title>
+<link rel="stylesheet" href="https://www.elliottmalkin.com/style.css" type="text/css" />
+<style>
+  .calendar-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .calendar-container iframe {
+    width: 100%;
+    border: 1px solid #777;
+  }
+  #calendar-week { display: block; }
+  #calendar-agenda { display: none; }
+  @media (max-width: 600px) {
+    #calendar-week { display: none; }
+    #calendar-agenda { display: block; }
+  }
+</style>
+</head>
+<body>
+
+<div id="content" style="width: auto; max-width: 800px;">
+  <div class="calendar-container">
+    <iframe
+      id="calendar-week"
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&mode=WEEK&src=Y19hZGU1ZDE3MjE0MzgxYWY5OWM5MGYxODVhMTNmYWJhMmJiYmM4NmIwODBhMWU2OWM5NWFlYWY5MGFhOWZjZTU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ad1457"
+      height="600"
+      frameborder="0"
+      scrolling="no"
+    ></iframe>
+    <iframe
+      id="calendar-agenda"
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&mode=AGENDA&src=Y19hZGU1ZDE3MjE0MzgxYWY5OWM5MGYxODVhMTNmYWJhMmJiYmM4NmIwODBhMWU2OWM5NWFlYWY5MGFhOWZjZTU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23ad1457"
+      height="600"
+      frameborder="0"
+      scrolling="no"
+    ></iframe>
+  </div>
+</div>
+
+</body>
+</html>
